@@ -1,4 +1,4 @@
-speedBreeze.com
+speedbreeze.com
 ===============
 
 This repository holds data for my personal website in a
