@@ -357,7 +357,7 @@ input:focus {
 }
 
 /* line 93, ../src/modules/_header.scss */
-.section-articles .nav li.articles a {
+.articles .nav li.articles a {
   background-color: #ffad33;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #ff9900), color-stop(100%, #ffc266));
   background-image: -moz-linear-gradient(bottom, #ff9900 0%, #ffc266 100%);
@@ -365,28 +365,46 @@ input:focus {
   color: black !important;
 }
 
+/* line 99, ../src/modules/_header.scss */
+.projects .nav li.projects a {
+  background-color: #ff3385;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #ff0066), color-stop(100%, #ff66a3));
+  background-image: -moz-linear-gradient(bottom, #ff0066 0%, #ff66a3 100%);
+  background-image: linear-gradient(bottom, #ff0066 0%, #ff66a3 100%);
+  color: black !important;
+}
+
+/* line 105, ../src/modules/_header.scss */
+.about .nav li.about a {
+  background-color: #33eaff;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #00e5ff), color-stop(100%, #66efff));
+  background-image: -moz-linear-gradient(bottom, #00e5ff 0%, #66efff 100%);
+  background-image: linear-gradient(bottom, #00e5ff 0%, #66efff 100%);
+  color: black !important;
+}
+
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 101, ../src/modules/_header.scss */
+  /* line 113, ../src/modules/_header.scss */
   #logo {
     border-bottom: 0 none !important;
   }
 
-  /* line 106, ../src/modules/_header.scss */
+  /* line 118, ../src/modules/_header.scss */
   #header .nav li a {
     padding: 1.4em 0.7em;
   }
-  /* line 110, ../src/modules/_header.scss */
+  /* line 122, ../src/modules/_header.scss */
   #header h1 a {
     padding: 0.65em 0;
   }
 
-  /* line 116, ../src/modules/_header.scss */
+  /* line 128, ../src/modules/_header.scss */
   #search {
     padding: 0.8em 0;
     display: block !important;
   }
-  /* line 120, ../src/modules/_header.scss */
+  /* line 132, ../src/modules/_header.scss */
   #search input {
     max-width: 10em;
     float: right;
