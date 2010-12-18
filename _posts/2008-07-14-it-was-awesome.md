@@ -80,6 +80,6 @@ Photos
 ------
 
 You can find photos of the event in the
-(ghop07 tag)[http://www.flickr.com/photos/tags/ghop07/] on Flickr and in
-the (ghop07 tag)[http://picasaweb.google.com/lh/searchbrowse?q=ghop07#0+1]
+[ghop07 tag](http://www.flickr.com/photos/tags/ghop07/) on Flickr and in
+the [ghop07 tag](http://picasaweb.google.com/lh/searchbrowse?q=ghop07#0+1)
 on Picasa Web Albums.
