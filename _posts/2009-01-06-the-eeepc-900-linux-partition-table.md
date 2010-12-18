@@ -2,10 +2,12 @@
 layout: article
 title: The EeePC 900 (Linux) Partition Table
 ---
+<div class="warn" markdown="1">
 Note: If you use any of the information in this blog post and trash
 your computer, it's not my fault. I'm not liable for anything that
 happens to you or your equipment.  This information is provided as-is
 with no warranties, expressed or implied.
+</div>
 
 During late spring 2008, I used up about $600 of my personal savings to
 buy an ASUS EeePC 900.   In retrospect, the EeePC was probably one of
