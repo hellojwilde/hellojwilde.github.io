@@ -169,24 +169,25 @@ pre {
   font-family: monospace;
   color: #fff;
   background: #666;
+  overflow: auto;
 }
 
-/* line 60, ../src/modules/_type.scss */
+/* line 61, ../src/modules/_type.scss */
 #content ul, #content ol {
   font-size: 0.875em;
   color: #373737;
   margin: 1em 0 1em 3em;
 }
-/* line 66, ../src/modules/_type.scss */
+/* line 67, ../src/modules/_type.scss */
 #content ul {
   list-style: disc inside;
 }
-/* line 70, ../src/modules/_type.scss */
+/* line 71, ../src/modules/_type.scss */
 #content ol {
   list-style: decimal inside;
 }
 
-/* line 76, ../src/modules/_type.scss */
+/* line 77, ../src/modules/_type.scss */
 .warn p {
   color: #7D0B28;
   padding: 0.8em 1em;
@@ -194,7 +195,7 @@ pre {
   background: #FFCBC4;
 }
 
-/* line 83, ../src/modules/_type.scss */
+/* line 84, ../src/modules/_type.scss */
 .note p {
   color: #0057AD;
   padding: 0.8em 1em;
@@ -202,22 +203,22 @@ pre {
   background: #DBEDFF;
 }
 
-/* line 90, ../src/modules/_type.scss */
+/* line 91, ../src/modules/_type.scss */
 table {
   font-size: 0.875em;
   width: 100%;
 }
-/* line 93, ../src/modules/_type.scss */
+/* line 94, ../src/modules/_type.scss */
 table td, table th {
   padding: 0.5em 0.7em;
   vertical-align: top;
 }
-/* line 98, ../src/modules/_type.scss */
+/* line 99, ../src/modules/_type.scss */
 table th {
   border-bottom: 2px solid #999;
   color: #373737;
 }
-/* line 103, ../src/modules/_type.scss */
+/* line 104, ../src/modules/_type.scss */
 table td {
   border-bottom: 1px solid #ccc;
   color: #777;
@@ -225,7 +226,7 @@ table td {
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 112, ../src/modules/_type.scss */
+  /* line 113, ../src/modules/_type.scss */
   h1 {
     font-size: 2.25em;
     padding: 0;
