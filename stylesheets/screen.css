@@ -202,9 +202,30 @@ pre {
   background: #DBEDFF;
 }
 
+/* line 90, ../src/modules/_type.scss */
+table {
+  font-size: 0.875em;
+  width: 100%;
+}
+/* line 93, ../src/modules/_type.scss */
+table td, table th {
+  padding: 0.5em 0.7em;
+  vertical-align: top;
+}
+/* line 98, ../src/modules/_type.scss */
+table th {
+  border-bottom: 2px solid #999;
+  color: #373737;
+}
+/* line 103, ../src/modules/_type.scss */
+table td {
+  border-bottom: 1px solid #ccc;
+  color: #777;
+}
+
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 93, ../src/modules/_type.scss */
+  /* line 112, ../src/modules/_type.scss */
   h1 {
     font-size: 2.25em;
     padding: 0;
