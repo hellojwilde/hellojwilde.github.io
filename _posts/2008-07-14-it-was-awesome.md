@@ -1,6 +1,7 @@
 ---
 layout: article
 title: It Was Awesome.
+section: articles
 ---
 
 The title really says it all.  Seriously.  I recently had the chance to

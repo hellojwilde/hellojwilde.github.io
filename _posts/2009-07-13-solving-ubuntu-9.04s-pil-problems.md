@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Solving Ubuntu 9.04's PIL Problems
+section: articles
 ---
 Last night, I began some volunteer Plone 3 development work for a local
 robotics organization.  My first step was to create a buildout on my

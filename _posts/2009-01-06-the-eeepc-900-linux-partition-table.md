@@ -1,6 +1,7 @@
 ---
 layout: article
 title: The EeePC 900 (Linux) Partition Table
+section: articles
 ---
 <div class="warn" markdown="1">
 Note: If you use any of the information in this blog post and trash
