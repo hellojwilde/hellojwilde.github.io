@@ -1,1 +1,472 @@
-﻿@charset "UTF-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}body{line-height:1;color:black;background:white}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0;vertical-align:middle}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:"" ""}q:before,q:after,blockquote:before,blockquote:after{content:""}a img{border:none}#header,#footer,#content{*zoom:1}#header:after,#footer:after,#content:after{content:"\0020";display:block;height:0;clear:both;overflow:hidden;visibility:hidden}@media(min-width:35em){.content{width:90%;margin:0 auto}}@media(min-width:60em){.content{width:54em}}/*! A font by Jos Buivenga (exljbris) -> http://www.exljbris.com */@font-face{font-family:"Museo Slab";src:url('../fonts/museo_slab_500-webfont.eot');src:local("☺"),url('../fonts/museo_slab_500-webfont.woff') format('woff'),url('../fonts/museo_slab_500-webfont.ttf') format('truetype'),url('../fonts/museo_slab_500-webfont.svg') format('svg')}body{font-family:Verdana,sans-serif;line-height:1.5em}h1,h2,h3{font-family:"Museo Slab",sans-serif;color:#373737}h1 a,h2 a,h3 a{text-decoration:none;display:block;color:#373737}h1{font-size:1.5em;padding-top:.45em;margin-bottom:.6em}h2{font-size:1.2em;margin:1em 0}p{font-size:.875em;color:#373737;text-align:justify;margin-bottom:1em}pre{padding:1em 1.5em;margin:1em 0;font-family:monospace;color:#fff;background:#666}#content ul,#content ol{font-size:.875em;color:#373737;margin:1em 0 1em 3em}#content ul{list-style:disc inside}#content ol{list-style:decimal inside}@media(min-width:35em){h1{font-size:2.25em;padding:0;line-height:1.333em}}input{width:96.5%;border:0 none;padding:.3em 2%;opacity:.5}input:focus{opacity:1}#header #logo,#header .nav,#header #search{text-align:center}#header .nav li{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto}#header .nav li{*display:inline}@media(min-width:35em){#header #logo,#header div.nav,#header #search{position:relative;float:left;left:100%}#header #logo{margin-left:-100%;width:20.37%;text-align:left}#header div.nav{margin-left:-77.778%;width:53.704%}#header #search{margin-left:-22.222%;width:20.37%;text-align:right}}#header{background:url(../images/header-background.png) repeat}#header a{color:#fff;text-decoration:none;display:block;line-height:1em}#header h1{font-size:1.375em;margin:0;padding:0}#header h1 a{padding:.6em 0}#header #logo{border-bottom:1px dotted #666}#header .nav li a{padding:1em .7em;font-size:.875em}#header #search{display:none}.section-articles .nav li.articles a{background-color:#ffad33;background-image:-webkit-gradient(linear,0% 100%,0% 0,color-stop(0%,#f90),color-stop(100%,#ffc266));background-image:-moz-linear-gradient(bottom,#f90 0,#ffc266 100%);background-image:linear-gradient(bottom,#f90 0,#ffc266 100%);color:black!important}@media(min-width:35em){#logo{border-bottom:0 none!important}#header .nav li a{padding:1.4em .7em}#header h1 a{padding:.65em 0}#search{padding:.8em 0;display:block!important}#search input{max-width:10em;float:right}}#footer{margin:2.5em 0}#footer p{text-indent:0;color:#999}@media(min-width:35em){body.page-entry .entry-header{float:left;width:100%;display:block;position:relative}body.page-entry .entry-header .entry-title{position:relative;float:left;left:100%;width:64.815%;margin-left:-100%}body.page-entry .entry-header .entry-meta{position:relative;float:left;left:100%;margin-left:-33.333%;width:31.481%}body.page-entry .entry-content p,body.page-entry .entry-content ul,body.page-entry .entry-content ol{width:64.815%}}#content{padding:1em}body.page-entry .entry-meta{margin-bottom:1.125em}body.page-entry .entry-meta p{color:#929292;text-indent:0;margin:0}body.page-entry .entry-meta abbr{color:#666}body.page-entry .entry-image-row{float:left;width:100%;display:block;position:relative;margin-bottom:1em}body.page-entry .entry-image-row img{width:100%;max-width:100%;height:auto}body.page-entry .entry-image-row .i1,body.page-entry .entry-image-row .i2,body.page-entry .entry-image-row .i3{position:relative;float:left;left:100%;width:31.481%}body.page-entry .entry-image-row .i1{margin-left:-100%}body.page-entry .entry-image-row .i2{margin-left:-66.667%}body.page-entry .entry-image-row .i3{margin-left:-33.333%}@media(min-width:35em){#content{padding:0}body.page-entry .entry-header{padding:2.45em 0 1.3em}body.page-entry .entry-header .entry-meta{margin-bottom:0}body.page-entry .entry-header .entry-meta p{text-align:ri
+﻿@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* The 16-column Deco Grid System. 
+ * Available in multiple variants, see http://deco.gs
+ *
+ * Cells are   4.16667%    (=40px)
+ * Column margins are 2.08333% (=20px)
+ * Total is    6.25%. (=80px) (which makes 16 columns)
+ * 
+ * If page width is fixed to 960px width:
+ * Cell will be equivalent to 40px, left/right margin will be 10px.
+ */
+/* Width classes. 
+   For a given cell width, the calculation is: 
+   width = (total cell width) * n - (column margins) 
+   In this case: (6.25*n - 2.08333)% */
+/* Positioning classes, these are subtracting from a rightmost 
+   position, which is why they seem the wrong way around */
+/* For a given position, the calculation is:
+   -100 + (total cell width * n)
+   In this case: margin-left: -100 + (6.25*n) */
+/* End of the core Deco Grid System */
+/* === LAYOUT */
+/* line 6, ../src/_layout.scss */
+#header, #footer, #content {
+  *zoom: 1;
+}
+/* line 22, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#header:after, #footer:after, #content:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+@media (min-width: 35em) {
+  /* line 11, ../src/_layout.scss */
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 60em) {
+  /* line 18, ../src/_layout.scss */
+  .content {
+    width: 54em;
+  }
+}
+
+/* | SKIN
+   +------------------------------------------------------------------------- */
+/*! A font by Jos Buivenga (exljbris) -> http://www.exljbris.com */
+@font-face {
+  font-family: "Museo Slab";
+  src: url('../fonts/museo_slab_500-webfont.eot');
+  src: local("â˜º"), url('../fonts/museo_slab_500-webfont.woff') format('woff'), url('../fonts/museo_slab_500-webfont.ttf') format('truetype'), url('../fonts/museo_slab_500-webfont.svg') format('svg');
+}
+
+/* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* line 17, ../src/modules/_type.scss */
+body {
+  font-family: Verdana, sans-serif;
+  line-height: 1.5em;
+}
+
+/* line 22, ../src/modules/_type.scss */
+h1, h2, h3 {
+  font-family: "Museo Slab", sans-serif;
+  color: #373737;
+}
+/* line 26, ../src/modules/_type.scss */
+h1 a, h2 a, h3 a {
+  text-decoration: none;
+  display: block;
+  color: #373737;
+}
+
+/* line 33, ../src/modules/_type.scss */
+h1 {
+  font-size: 1.5em;
+  padding-top: 0.45em;
+  margin-bottom: 0.6em;
+}
+
+/* line 39, ../src/modules/_type.scss */
+h2 {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+/* line 44, ../src/modules/_type.scss */
+p {
+  font-size: 0.875em;
+  color: #373737;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+/* line 51, ../src/modules/_type.scss */
+pre {
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  font-family: monospace;
+  color: #fff;
+  background: #666;
+}
+
+/* line 60, ../src/modules/_type.scss */
+#content ul, #content ol {
+  font-size: 0.875em;
+  color: #373737;
+  margin: 1em 0 1em 3em;
+}
+/* line 66, ../src/modules/_type.scss */
+#content ul {
+  list-style: disc inside;
+}
+/* line 70, ../src/modules/_type.scss */
+#content ol {
+  list-style: decimal inside;
+}
+
+/* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 35em) {
+  /* line 79, ../src/modules/_type.scss */
+  h1 {
+    font-size: 2.25em;
+    padding: 0;
+    line-height: 1.333em;
+  }
+}
+
+/* line 1, ../src/modules/_forms.scss */
+input {
+  width: 96.5%;
+  border: 0 none;
+  padding: 0.3em 2%;
+  opacity: 0.5;
+}
+/* line 7, ../src/modules/_forms.scss */
+input:focus {
+  opacity: 1;
+}
+
+/* Size Ranges */
+/* The 16-column Deco Grid System. 
+ * Available in multiple variants, see http://deco.gs
+ *
+ * Cells are   4.16667%    (=40px)
+ * Column margins are 2.08333% (=20px)
+ * Total is    6.25%. (=80px) (which makes 16 columns)
+ * 
+ * If page width is fixed to 960px width:
+ * Cell will be equivalent to 40px, left/right margin will be 10px.
+ */
+/* Width classes. 
+   For a given cell width, the calculation is: 
+   width = (total cell width) * n - (column margins) 
+   In this case: (6.25*n - 2.08333)% */
+/* Positioning classes, these are subtracting from a rightmost 
+   position, which is why they seem the wrong way around */
+/* For a given position, the calculation is:
+   -100 + (total cell width * n)
+   In this case: margin-left: -100 + (6.25*n) */
+/* End of the core Deco Grid System */
+/* | LAYOUT
+   +------------------------------------------------------------------------- */
+/* | Mobile Base Layout - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* line 11, ../src/modules/_header.scss */
+#header #logo, #header .nav, #header #search {
+  text-align: center;
+}
+/* line 15, ../src/modules/_header.scss */
+#header .nav li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+/* line 7, ../../../../../Apps/Ruby187/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#header .nav li {
+  *display: inline;
+}
+
+/* | Notebook, Tablet Layout  - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 35em) {
+  /* line 24, ../src/modules/_header.scss */
+  #header #logo, #header div.nav, #header #search {
+    position: relative;
+    float: left;
+    left: 100%;
+  }
+  /* line 28, ../src/modules/_header.scss */
+  #header #logo {
+    margin-left: -100%;
+    width: 20.37%;
+    text-align: left;
+  }
+  /* line 34, ../src/modules/_header.scss */
+  #header div.nav {
+    margin-left: -77.778%;
+    width: 53.704%;
+  }
+  /* line 39, ../src/modules/_header.scss */
+  #header #search {
+    margin-left: -22.222%;
+    width: 20.37%;
+    text-align: right;
+  }
+}
+
+/* | SKIN
+   +------------------------------------------------------------------------- */
+/* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* line 58, ../src/modules/_header.scss */
+#header {
+  background: url(../images/header-background.png) repeat;
+}
+/* line 61, ../src/modules/_header.scss */
+#header a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 1em;
+}
+/* line 68, ../src/modules/_header.scss */
+#header h1 {
+  font-size: 1.375em;
+  margin: 0;
+  padding: 0;
+}
+/* line 73, ../src/modules/_header.scss */
+#header h1 a {
+  padding: 0.6em 0;
+}
+/* line 78, ../src/modules/_header.scss */
+#header #logo {
+  border-bottom: 1px dotted #666;
+}
+/* line 82, ../src/modules/_header.scss */
+#header .nav li a {
+  padding: 1em 0.7em;
+  font-size: 0.875em;
+}
+/* line 87, ../src/modules/_header.scss */
+#header #search {
+  display: none;
+}
+
+/* line 93, ../src/modules/_header.scss */
+.section-articles .nav li.articles a {
+  background-color: #ffad33;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #ff9900), color-stop(100%, #ffc266));
+  background-image: -moz-linear-gradient(bottom, #ff9900 0%, #ffc266 100%);
+  background-image: linear-gradient(bottom, #ff9900 0%, #ffc266 100%);
+  color: black !important;
+}
+
+/* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 35em) {
+  /* line 101, ../src/modules/_header.scss */
+  #logo {
+    border-bottom: 0 none !important;
+  }
+
+  /* line 106, ../src/modules/_header.scss */
+  #header .nav li a {
+    padding: 1.4em 0.7em;
+  }
+  /* line 110, ../src/modules/_header.scss */
+  #header h1 a {
+    padding: 0.65em 0;
+  }
+
+  /* line 116, ../src/modules/_header.scss */
+  #search {
+    padding: 0.8em 0;
+    display: block !important;
+  }
+  /* line 120, ../src/modules/_header.scss */
+  #search input {
+    max-width: 10em;
+    float: right;
+  }
+}
+
+/* line 1, ../src/modules/_footer.scss */
+#footer {
+  margin: 2.5em 0;
+}
+/* line 4, ../src/modules/_footer.scss */
+#footer p {
+  text-indent: 0;
+  color: #999;
+}
+
+/* | LAYOUT
+   +------------------------------------------------------------------------- */
+/* | Notebook, Tablet Layout  - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 35em) {
+  /* line 8, ../src/modules/_entries.scss */
+  body.page-entry .entry-header {
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  /* line 11, ../src/modules/_entries.scss */
+  body.page-entry .entry-header .entry-title {
+    position: relative;
+    float: left;
+    left: 100%;
+    width: 64.815%;
+    margin-left: -100%;
+  }
+  /* line 17, ../src/modules/_entries.scss */
+  body.page-entry .entry-header .entry-meta {
+    position: relative;
+    float: left;
+    left: 100%;
+    margin-left: -33.333%;
+    width: 31.481%;
+  }
+  /* line 25, ../src/modules/_entries.scss */
+  body.page-entry .entry-content p, body.page-entry .entry-content ul, body.page-entry .entry-content ol {
+    width: 64.815%;
+  }
+}
+
+/* | SKIN
+   +------------------------------------------------------------------------- */
+/* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* line 37, ../src/modules/_entries.scss */
+#content {
+  padding: 1em;
+}
+
+/* line 42, ../src/modules/_entries.scss */
+body.page-entry .entry-meta {
+  margin-bottom: 1.125em;
+}
+/* line 43, ../src/modules/_entries.scss */
+body.page-entry .entry-meta p {
+  color: #929292;
+  text-indent: 0;
+  margin: 0;
+}
+/* line 49, ../src/modules/_entries.scss */
+body.page-entry .entry-meta abbr {
+  color: #666;
+}
+/* line 56, ../src/modules/_entries.scss */
+body.page-entry .entry-image-row {
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 1em;
+}
+/* line 61, ../src/modules/_entries.scss */
+body.page-entry .entry-image-row img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* line 66, ../src/modules/_entries.scss */
+body.page-entry .entry-image-row .i1, body.page-entry .entry-image-row .i2, body.page-entry .entry-image-row .i3 {
+  position: relative;
+  float: left;
+  left: 100%;
+  width: 31.481%;
+}
+/* line 70, ../src/modules/_entries.scss */
+body.page-entry .entry-image-row .i1 {
+  margin-left: -100%;
+}
+/* line 73, ../src/modules/_entries.scss */
+body.page-entry .entry-image-row .i2 {
+  margin-left: -66.667%;
+}
+/* line 76, ../src/modules/_entries.scss */
+body.page-entry .entry-image-row .i3 {
+  margin-left: -33.333%;
+}
+
+/* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 35em) {
+  /* line 85, ../src/modules/_entries.scss */
+  #content {
+    padding: 0;
+  }
+
+  /* line 90, ../src/modules/_entries.scss */
+  body.page-entry .entry-header {
+    padding: 2.45em 0 1.3em;
+  }
+  /* line 93, ../src/modules/_entries.scss */
+  body.page-entry .entry-header .entry-meta {
+    margin-bottom: 0;
+  }
+  /* line 94, ../src/modules/_entries.scss */
+  body.page-entry .entry-header .entry-meta p {
+    text-align: right;
+  }
+}
