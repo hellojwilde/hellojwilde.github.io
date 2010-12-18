@@ -30,9 +30,8 @@ buildout, ZopeSkel, etc.  In other words, the default ASUS-modded
 Xandros operating system isn't a very good operating system for
 software development.
 
-Enter [Ubuntu Eee --Easy Peasy--](http://www.geteasypeasy.com/) (it was renamed
-due to a trademark issue).  Essentially, it's an unofficial fork of the Ubuntu
-distribution of Linux made specifically for netbooks.  When version
+Enter [Easy Peasy](http://www.geteasypeasy.com/).  Essentially, it's an
+unofficial fork of Ubuntu with tweaks for netbooks.  When version
 8.04.1 of Easy Peasy came out, I tried to install it, but couldn't get
 my flash drive to successfully boot the LiveUSB copy of it.
 
