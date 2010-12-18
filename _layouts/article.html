@@ -9,7 +9,9 @@ layout: default
         
         <div class="entry-meta">
             <p class="entry-date">
-                <abbr>{{ page.date }}</abbr>
+                <abbr class="published" name="{{ page.date | date: '%d %B %m' }}">
+                    {{ page.date | date: '%Y-%m-%d }}
+                </abbr>
             </p>
         </div>
     </div>
