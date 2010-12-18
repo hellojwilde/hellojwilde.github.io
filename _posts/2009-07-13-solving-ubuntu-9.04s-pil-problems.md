@@ -11,9 +11,8 @@ the following:
 
 	python2.4 bin/instance fg
 
-For some reason, the instance did not start.
-
-Instead, I received the following Python error:
+For some reason, the instance did not start. Instead, I received the following
+Python error:
 
 	ImportError: No module named PIL
 
