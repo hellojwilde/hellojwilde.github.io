@@ -30,8 +30,8 @@ buildout, ZopeSkel, etc.  In other words, the default ASUS-modded
 Xandros operating system isn't a very good operating system for
 software development.
 
-Enter (Ubuntu Eee --Easy Peasy--)[] (it was renamed due to a trademark
-issue).  Essentially, it's an unofficial fork of the Ubuntu
+Enter [Ubuntu Eee --Easy Peasy--](http://www.geteasypeasy.com/) (it was renamed
+due to a trademark issue).  Essentially, it's an unofficial fork of the Ubuntu
 distribution of Linux made specifically for netbooks.  When version
 8.04.1 of Easy Peasy came out, I tried to install it, but couldn't get
 my flash drive to successfully boot the LiveUSB copy of it.
@@ -53,8 +53,8 @@ were a total of 5 partitions.  Not shiny.  To inform readers (and
 future me) with what these partitions probably are used for, I've put
 together the following handy tables.  The information used to compile
 the "notes" and "label" columns of the first table was borrowed from
-the ("What is on Partitions 3 and 4 ?"
-EeeUser thread)[http://forum.eeeuser.com/viewtopic.php?id=779].  The
+the ["What is on Partitions 3 and 4 ?"
+EeeUser thread](http://forum.eeeuser.com/viewtopic.php?id=779).  The
 information for the "drive" and "filesystem" columns was found using
 the following command:
 
@@ -66,15 +66,16 @@ from gparted.
 Drive: /dev/sda
 ---------------
 
-Drive		| Label		| Size	| Filesystem		| Notes
-------------------------------------------------------------------------------------------------------------------------------------
-/dev/sda1 	| SYSTEM	| 2.4 GB| ext2				| This holds a copy of the Xandros operating system used for system restoration.
-/dev/sda2 	| USER		| 1.5 GB| ext3				| This holds the active copy of Xandros used to run the system.
-/dev/sda3 	| BIOS		| 8 MB	| W95 FAT32 (LBA)	| This holds a copy of the BIOS for updating purposes. Don't delete this.
-/dev/sda4 	| EFI		| 8 MB	| EFI (FAT-12/15/32)| Used for the BootBooster BIOS option. Don't delete this.
+|Drive		| Label		| Size	| Filesystem		| Notes                                                                          |
+|-----------|-----------|-------|-------------------|--------------------------------------------------------------------------------|
+|/dev/sda1 	| SYSTEM	| 2.4 GB| ext2				| This holds a copy of the Xandros operating system used for system restoration. |
+|/dev/sda2 	| USER		| 1.5 GB| ext3				| This holds the active copy of Xandros used to run the system.                  |
+|/dev/sda3 	| BIOS		| 8 MB	| W95 FAT32 (LBA)	| This holds a copy of the BIOS for updating purposes. Don't delete this.        |
+|/dev/sda4 	| EFI		| 8 MB	| EFI (FAT-12/15/32)| Used for the BootBooster BIOS option. Don't delete this.                       |
 
 Drive: /dev/sdb
+---------------
 
-Drive		| Label	| Size		| Filesystem	| Notes
-------------------------------------------------------------------------------------------------------------------------------------
-/dev/sdb1	| n/a	| 15.7 GB	| ext3			| Mounted as "/home". This is where all of your files go.
+|Drive		| Label	| Size		| Filesystem	| Notes                                                                              |
+|-----------|-------|-----------|---------------|------------------------------------------------------------------------------------|
+|/dev/sdb1	| n/a	| 15.7 GB	| ext3			| Mounted as "/home". This is where all of your files go.                            |
