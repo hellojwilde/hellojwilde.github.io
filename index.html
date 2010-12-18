@@ -2,8 +2,24 @@
 layout: default
 title: SpeedBreeze: A Teenage Web Developer's Site
 ---
-<ul>
+<div class="hfeed">
     {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <div class="hentry teaser">
+        <h2 class="entry-title">
+            <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+        </h2>
+        
+        <div class="entry-meta">
+            <p class="entry-date">
+                <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+                    {{ post.date | date: '%d %B %Y' }}
+                </abbr>
+            </p>
+        </div>
+        
+        <div class="entry-content">
+            {{ post.content | strip_html | truncatewords: '150' }}
+        </div>
+    </div>
     {% endfor %}
-</ul>
+</div>
