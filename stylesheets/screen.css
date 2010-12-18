@@ -119,7 +119,7 @@ a img {
 @font-face {
   font-family: "Museo Slab";
   src: url('../fonts/museo_slab_500-webfont.eot');
-  src: local("â˜º"), url('../fonts/museo_slab_500-webfont.woff') format('woff'), url('../fonts/museo_slab_500-webfont.ttf') format('truetype'), url('../fonts/museo_slab_500-webfont.svg') format('svg');
+  src: local("☺"), url('../fonts/museo_slab_500-webfont.woff') format('woff'), url('../fonts/museo_slab_500-webfont.ttf') format('truetype'), url('../fonts/museo_slab_500-webfont.svg') format('svg');
 }
 
 /* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -186,9 +186,25 @@ pre {
   list-style: decimal inside;
 }
 
+/* line 76, ../src/modules/_type.scss */
+.warn p {
+  color: #7D0B28;
+  padding: 0.8em 1em;
+  margin-bottom: 1em;
+  background: #FFCBC4;
+}
+
+/* line 83, ../src/modules/_type.scss */
+.note p {
+  color: #0057AD;
+  padding: 0.8em 1em;
+  margin-bottom: 1em;
+  background: #DBEDFF;
+}
+
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 79, ../src/modules/_type.scss */
+  /* line 93, ../src/modules/_type.scss */
   h1 {
     font-size: 2.25em;
     padding: 0;
@@ -392,31 +408,41 @@ input:focus {
   body.page-entry .entry-content p, body.page-entry .entry-content ul, body.page-entry .entry-content ol {
     width: 64.815%;
   }
+  /* line 29, ../src/modules/_entries.scss */
+  body.page-entry .entry-content .warn, body.page-entry .entry-content .note {
+    float: right;
+    width: 31.481%;
+    margin-right: 1.852%;
+  }
+  /* line 34, ../src/modules/_entries.scss */
+  body.page-entry .entry-content .warn p, body.page-entry .entry-content .note p {
+    width: auto;
+  }
 }
 
 /* | SKIN
    +------------------------------------------------------------------------- */
 /* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* line 37, ../src/modules/_entries.scss */
+/* line 47, ../src/modules/_entries.scss */
 #content {
   padding: 1em;
 }
 
-/* line 42, ../src/modules/_entries.scss */
+/* line 52, ../src/modules/_entries.scss */
 body.page-entry .entry-meta {
   margin-bottom: 1.125em;
 }
-/* line 43, ../src/modules/_entries.scss */
+/* line 53, ../src/modules/_entries.scss */
 body.page-entry .entry-meta p {
   color: #929292;
   text-indent: 0;
   margin: 0;
 }
-/* line 49, ../src/modules/_entries.scss */
+/* line 59, ../src/modules/_entries.scss */
 body.page-entry .entry-meta abbr {
   color: #666;
 }
-/* line 56, ../src/modules/_entries.scss */
+/* line 66, ../src/modules/_entries.scss */
 body.page-entry .entry-image-row {
   float: left;
   width: 100%;
@@ -424,48 +450,48 @@ body.page-entry .entry-image-row {
   position: relative;
   margin-bottom: 1em;
 }
-/* line 61, ../src/modules/_entries.scss */
+/* line 71, ../src/modules/_entries.scss */
 body.page-entry .entry-image-row img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-/* line 66, ../src/modules/_entries.scss */
+/* line 76, ../src/modules/_entries.scss */
 body.page-entry .entry-image-row .i1, body.page-entry .entry-image-row .i2, body.page-entry .entry-image-row .i3 {
   position: relative;
   float: left;
   left: 100%;
   width: 31.481%;
 }
-/* line 70, ../src/modules/_entries.scss */
+/* line 80, ../src/modules/_entries.scss */
 body.page-entry .entry-image-row .i1 {
   margin-left: -100%;
 }
-/* line 73, ../src/modules/_entries.scss */
+/* line 83, ../src/modules/_entries.scss */
 body.page-entry .entry-image-row .i2 {
   margin-left: -66.667%;
 }
-/* line 76, ../src/modules/_entries.scss */
+/* line 86, ../src/modules/_entries.scss */
 body.page-entry .entry-image-row .i3 {
   margin-left: -33.333%;
 }
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 85, ../src/modules/_entries.scss */
+  /* line 95, ../src/modules/_entries.scss */
   #content {
     padding: 0;
   }
 
-  /* line 90, ../src/modules/_entries.scss */
+  /* line 100, ../src/modules/_entries.scss */
   body.page-entry .entry-header {
     padding: 2.45em 0 1.3em;
   }
-  /* line 93, ../src/modules/_entries.scss */
+  /* line 103, ../src/modules/_entries.scss */
   body.page-entry .entry-header .entry-meta {
     margin-bottom: 0;
   }
-  /* line 94, ../src/modules/_entries.scss */
+  /* line 104, ../src/modules/_entries.scss */
   body.page-entry .entry-header .entry-meta p {
     text-align: right;
   }
