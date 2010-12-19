@@ -2,6 +2,10 @@
 layout: article
 title: It Was Awesome.
 section: articles
+summary:
+    After the 2007 Google Highly Open Participation Contest, I had the
+    opportunity to go to an awards ceremony at Google's headquarters in
+    Mountain View, CA.  Here's a recap of the awards ceremony weekend.
 ---
 
 The title really says it all.  Seriously.  I recently had the chance to

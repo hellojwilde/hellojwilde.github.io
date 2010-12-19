@@ -2,6 +2,9 @@
 layout: article
 title: Solving Ubuntu 9.04's PIL Problems
 section: articles
+summary:
+    I was having issues with PIL not being recognized on my Ubuntu machine.
+    Here's my workaround for installing it.
 ---
 Last night, I began some volunteer Plone 3 development work for a local
 robotics organization.  My first step was to create a buildout on my

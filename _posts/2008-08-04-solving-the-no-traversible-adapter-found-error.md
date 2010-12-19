@@ -2,6 +2,9 @@
 layout: article
 title: Solving the "No traversable adapter found." Error
 seciton: articles
+summary:
+    Ever seen that error in Zope or Plone?  Here's a general heuristic for
+    fixing it.
 ---
 I was recently troubleshooting an installation of Plone and tried to
 install one of the hundreds of Plone products.  Immediately after
