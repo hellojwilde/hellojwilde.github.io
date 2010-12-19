@@ -233,7 +233,7 @@ hr {
   background: #333333 url(../images/header-background.png) repeat;
   border: 0px;
   height: 2px;
-  margin: 1.5em auto;
+  margin: 2em auto;
   width: 35%;
 }
 
@@ -423,11 +423,19 @@ input:focus {
 /* line 1, ../src/modules/_footer.scss */
 #footer {
   margin: 2.5em 0;
+  padding: 0 1em;
 }
-/* line 4, ../src/modules/_footer.scss */
+/* line 5, ../src/modules/_footer.scss */
 #footer p {
   text-indent: 0;
   color: #999;
+}
+
+@media (min-width: 35em) {
+  /* line 12, ../src/modules/_footer.scss */
+  #footer {
+    padding: 0;
+  }
 }
 
 /* | LAYOUT
@@ -603,3 +611,37 @@ p.mission {
     font-size: 1.9em;
   }
 }
+
+/* | LAYOUT
+   +------------------------------------------------------------------------- */
+/* | Notebook, Tablet Layout  - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 35em) {
+  /* line 7, ../src/modules/_archives.scss */
+  .archivegroup {
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  /* line 11, ../src/modules/_archives.scss */
+  .archive {
+    position: relative;
+    float: left;
+    left: 100%;
+    width: 48.148%;
+  }
+  /* line 15, ../src/modules/_archives.scss */
+  .archive .a1 {
+    margin-left: -100%;
+  }
+  /* line 19, ../src/modules/_archives.scss */
+  .archive .a2 {
+    margin-left: -50%;
+  }
+}
+
+/* | SKIN
+   +------------------------------------------------------------------------- */
+/* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
