@@ -146,15 +146,16 @@ h1, .teaser h2 {
   font-size: 1.5em;
   padding-top: 0.45em;
   margin-bottom: 0.6em;
+  margin-top: 0 !important;
 }
 
-/* line 39, ../src/modules/_type.scss */
+/* line 40, ../src/modules/_type.scss */
 h2 {
   font-size: 1.2em;
   margin: 1em 0;
 }
 
-/* line 44, ../src/modules/_type.scss */
+/* line 45, ../src/modules/_type.scss */
 p {
   font-size: 0.875em;
   color: #373737;
@@ -162,25 +163,24 @@ p {
   margin-bottom: 1em;
 }
 
-/* line 51, ../src/modules/_type.scss */
+/* line 52, ../src/modules/_type.scss */
 pre {
   padding: 1em 1.5em;
   margin: 1em 0;
   font-family: monospace;
-  color: #fff;
-  background: #666;
   overflow: auto;
 }
 
-/* line 61, ../src/modules/_type.scss */
+/* line 60, ../src/modules/_type.scss */
 #content ul, #content ol {
   font-size: 0.875em;
   color: #373737;
   margin: 1em 0;
 }
-/* line 66, ../src/modules/_type.scss */
+/* line 65, ../src/modules/_type.scss */
 #content ul li, #content ol li {
   margin-left: 3em;
+  text-align: justify;
 }
 /* line 71, ../src/modules/_type.scss */
 #content ul {
@@ -493,17 +493,7 @@ input:focus {
 body.entry .entry-meta {
   margin-bottom: 1.125em;
 }
-/* line 63, ../src/modules/_entries.scss */
-body.entry .entry-meta p {
-  color: #929292;
-  text-indent: 0;
-  margin: 0;
-}
-/* line 69, ../src/modules/_entries.scss */
-body.entry .entry-meta abbr {
-  color: #666;
-}
-/* line 76, ../src/modules/_entries.scss */
+/* line 66, ../src/modules/_entries.scss */
 body.entry .entry-image-row {
   float: left;
   width: 100%;
@@ -511,48 +501,59 @@ body.entry .entry-image-row {
   position: relative;
   margin-bottom: 1em;
 }
-/* line 81, ../src/modules/_entries.scss */
+/* line 71, ../src/modules/_entries.scss */
 body.entry .entry-image-row img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-/* line 86, ../src/modules/_entries.scss */
+/* line 76, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i1, body.entry .entry-image-row .i2, body.entry .entry-image-row .i3 {
   position: relative;
   float: left;
   left: 100%;
   width: 31.481%;
 }
-/* line 90, ../src/modules/_entries.scss */
+/* line 80, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i1 {
   margin-left: -100%;
 }
-/* line 93, ../src/modules/_entries.scss */
+/* line 83, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i2 {
   margin-left: -66.667%;
 }
-/* line 96, ../src/modules/_entries.scss */
+/* line 86, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i3 {
   margin-left: -33.333%;
 }
 
+/* line 93, ../src/modules/_entries.scss */
+.entry-meta p {
+  color: #929292;
+  text-indent: 0;
+  margin: 0;
+}
+/* line 99, ../src/modules/_entries.scss */
+.entry-meta abbr {
+  color: #666;
+}
+
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 105, ../src/modules/_entries.scss */
+  /* line 107, ../src/modules/_entries.scss */
   #content {
     padding: 0;
   }
 
-  /* line 110, ../src/modules/_entries.scss */
+  /* line 112, ../src/modules/_entries.scss */
   body.entry .entry-header {
     padding: 2.45em 0 1.3em;
   }
-  /* line 113, ../src/modules/_entries.scss */
+  /* line 115, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta {
     margin-bottom: 0;
   }
-  /* line 114, ../src/modules/_entries.scss */
+  /* line 116, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta p {
     text-align: right;
   }
