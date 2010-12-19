@@ -1,0 +1,38 @@
+---
+layout: default
+title: Articles
+section: articles
+type: archive
+---
+<div class="archivegroup">
+    <div class="archive">
+        <h1>By Date</h1>
+        {% for post in site.posts %}
+        <div class="hentry teaser">
+            <h2 class="entry-title">
+                <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+            </h2>
+            
+            <div class="entry-summary">
+                <p>{{ post.summary }}</p>
+            </div>
+            
+            <div class="entry-meta">
+                <p class="entry-date">
+                    <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+                        {{ post.date | date: '%d %B %Y' }}
+                    </abbr>
+                </p>
+                
+                <p class="entry-read">
+                    <a href="{{ post.url }}" rel="bookmark">Read</a>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="archive">
+        <h1>By Category</h1>
+    </div>
+</div>   
