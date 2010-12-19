@@ -589,16 +589,17 @@ body.entry .entry-image-row .i3 {
 p.mission {
   font-family: "Museo Slab", serif;
   padding: 0 5%;
-  font-size: 1.6em;
-  margin: 2em 0;
+  font-size: 1.9em;
+  margin: 1em 0;
   line-height: 150%;
+  text-align: center;
 }
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 17, ../src/modules/_home.scss */
+  /* line 18, ../src/modules/_home.scss */
   p.mission {
     padding: 0 10%;
-    font-size: 2em;
+    font-size: 1.3em;
   }
 }
