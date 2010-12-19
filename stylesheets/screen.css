@@ -589,7 +589,7 @@ body.entry .entry-image-row .i3 {
 p.mission {
   font-family: "Museo Slab", serif;
   padding: 0 5%;
-  font-size: 1.9em;
+  font-size: 1.3em;
   margin: 1em 0;
   line-height: 150%;
   text-align: center;
@@ -600,6 +600,6 @@ p.mission {
   /* line 18, ../src/modules/_home.scss */
   p.mission {
     padding: 0 10%;
-    font-size: 1.3em;
+    font-size: 1.9em;
   }
 }
