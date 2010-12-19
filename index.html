@@ -17,8 +17,8 @@ title: SpeedBreeze
             </p>
         </div>
         
-        <div class="entry-content">
-            {{ post.content | strip_html | truncatewords: '150' }}
+        <div class="entry-summary">
+            <p>{{ post.summary }}</p>
         </div>
     </div>
     {% endfor %}
