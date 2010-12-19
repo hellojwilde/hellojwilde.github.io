@@ -615,32 +615,7 @@ p.mission {
 /* | LAYOUT
    +------------------------------------------------------------------------- */
 /* | Notebook, Tablet Layout  - - - - - - - - - - - - - - - - - - - - - - - - */
-@media (min-width: 35em) {
-  /* line 7, ../src/modules/_archives.scss */
-  .archivegroup {
-    float: left;
-    width: 100%;
-    display: block;
-    position: relative;
-  }
-
-  /* line 11, ../src/modules/_archives.scss */
-  .archive {
-    position: relative;
-    float: left;
-    left: 100%;
-    width: 48.148%;
-  }
-  /* line 15, ../src/modules/_archives.scss */
-  .archive .a1 {
-    margin-left: -100%;
-  }
-  /* line 19, ../src/modules/_archives.scss */
-  .archive .a2 {
-    margin-left: -50%;
-  }
-}
-
+@media (min-width: 35em) {}
 /* | SKIN
    +------------------------------------------------------------------------- */
 /* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
