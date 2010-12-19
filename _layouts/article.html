@@ -10,9 +10,16 @@ type: entry
         
         <div class="entry-meta">
             <p class="entry-date">
-                <abbr class="published" name="{{ page.date | date: '%Y-%m-%d' }}">
+                <abbr class="updated" name="{{ page.date | date: '%Y-%m-%d' }}">
                     {{ page.date | date: '%d %B %Y' }}
                 </abbr>
+            </p>
+            <p class="entry-author">
+                <span class="vcard author">
+                    <a class="url fn" href="http://www.speedbreeze.com/about">
+                        Jonathan Wilde
+                    </a>
+                </span>
             </p>
         </div>
     </div>
