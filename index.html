@@ -15,22 +15,24 @@ type: feed
     <div class="hfeed">
         {% for post in site.posts %}
         <div class="hentry teaser">
-            <div class="entry-header">
-                <h2 class="entry-title">
-                    <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-                </h2>
-                
-                <div class="entry-meta">
-                    <p class="entry-date">
-                        <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
-                            {{ post.date | date: '%d %B %Y' }}
-                        </abbr>
-                    </p>
-                </div>
-            </div>
+            <h2 class="entry-title">
+                <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+            </h2>
             
             <div class="entry-summary">
                 <p>{{ post.summary }}</p>
+            </div>
+            
+            <div class="entry-meta">
+                <p class="entry-date">
+                    <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+                        {{ post.date | date: '%d %B %Y' }}
+                    </abbr>
+                </p>
+                
+                <p class="entry-read">
+                    <a href="{{ post.url }}" rel="bookmark">Read</a>
+                </p>
             </div>
         </div>
         {% endfor %}
