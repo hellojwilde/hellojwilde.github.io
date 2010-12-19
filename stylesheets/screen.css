@@ -228,9 +228,18 @@ table td {
   color: #777;
 }
 
+/* line 113, ../src/modules/_type.scss */
+hr {
+  background: #333333 url(../images/header-background.png) repeat;
+  border: 0px;
+  height: 2px;
+  margin: 1.5em auto;
+  width: 35%;
+}
+
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 116, ../src/modules/_type.scss */
+  /* line 124, ../src/modules/_type.scss */
   h1 {
     font-size: 2.25em;
     padding: 0;
@@ -490,10 +499,21 @@ input:focus {
 }
 
 /* line 62, ../src/modules/_entries.scss */
+.entry-meta p {
+  color: #929292;
+  text-indent: 0;
+  margin: 0;
+}
+/* line 68, ../src/modules/_entries.scss */
+.entry-meta abbr {
+  color: #666;
+}
+
+/* line 74, ../src/modules/_entries.scss */
 body.entry .entry-meta {
   margin-bottom: 1.125em;
 }
-/* line 66, ../src/modules/_entries.scss */
+/* line 78, ../src/modules/_entries.scss */
 body.entry .entry-image-row {
   float: left;
   width: 100%;
@@ -501,60 +521,68 @@ body.entry .entry-image-row {
   position: relative;
   margin-bottom: 1em;
 }
-/* line 71, ../src/modules/_entries.scss */
+/* line 83, ../src/modules/_entries.scss */
 body.entry .entry-image-row img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-/* line 76, ../src/modules/_entries.scss */
+/* line 88, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i1, body.entry .entry-image-row .i2, body.entry .entry-image-row .i3 {
   position: relative;
   float: left;
   left: 100%;
   width: 31.481%;
 }
-/* line 80, ../src/modules/_entries.scss */
+/* line 92, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i1 {
   margin-left: -100%;
 }
-/* line 83, ../src/modules/_entries.scss */
+/* line 95, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i2 {
   margin-left: -66.667%;
 }
-/* line 86, ../src/modules/_entries.scss */
+/* line 98, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i3 {
   margin-left: -33.333%;
 }
 
-/* line 93, ../src/modules/_entries.scss */
-.entry-meta p {
-  color: #929292;
-  text-indent: 0;
-  margin: 0;
+/* line 104, ../src/modules/_entries.scss */
+.teaser {
+  margin-bottom: 2em;
 }
-/* line 99, ../src/modules/_entries.scss */
-.entry-meta abbr {
-  color: #666;
+/* line 107, ../src/modules/_entries.scss */
+.teaser .entry-meta {
+  overflow: auto;
+}
+/* line 110, ../src/modules/_entries.scss */
+.teaser .entry-meta p {
+  float: left;
+  margin-right: 2em;
 }
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 107, ../src/modules/_entries.scss */
+  /* line 120, ../src/modules/_entries.scss */
   #content {
     padding: 0;
   }
 
-  /* line 112, ../src/modules/_entries.scss */
+  /* line 125, ../src/modules/_entries.scss */
   body.entry .entry-header {
     padding: 2.45em 0 1.3em;
   }
-  /* line 115, ../src/modules/_entries.scss */
+  /* line 128, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta {
     margin-bottom: 0;
   }
-  /* line 116, ../src/modules/_entries.scss */
+  /* line 129, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta p {
     text-align: right;
   }
 }
+
+/* | SKIN
+   +------------------------------------------------------------------------- */
+/* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
