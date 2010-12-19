@@ -5,16 +5,18 @@ title: SpeedBreeze
 <div class="hfeed">
     {% for post in site.posts %}
     <div class="hentry teaser">
-        <h2 class="entry-title">
-            <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-        </h2>
-        
-        <div class="entry-meta">
-            <p class="entry-date">
-                <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
-                    {{ post.date | date: '%d %B %Y' }}
-                </abbr>
-            </p>
+        <div class="entry-header">
+            <h2 class="entry-title">
+                <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+            </h2>
+            
+            <div class="entry-meta">
+                <p class="entry-date">
+                    <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+                        {{ post.date | date: '%d %B %Y' }}
+                    </abbr>
+                </p>
+            </div>
         </div>
         
         <div class="entry-summary">
