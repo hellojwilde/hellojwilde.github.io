@@ -142,7 +142,7 @@ h1 a, h2 a, h3 a {
 }
 
 /* line 33, ../src/modules/_type.scss */
-h1 {
+h1, .teaser h2 {
   font-size: 1.5em;
   padding-top: 0.45em;
   margin-bottom: 0.6em;
@@ -537,6 +537,4 @@ body.entry .entry-image-row .i3 {
   }
   /* line 104, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta p {
-    text-align: right;
-  }
-}
+    text-align: righ
