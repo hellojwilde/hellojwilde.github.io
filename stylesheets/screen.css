@@ -619,32 +619,35 @@ body.entry .entry-image-row .i3 {
   margin: 0;
 }
 /* line 23, ../src/modules/_home.scss */
-#mission hr {
+#mission .hr {
   height: 3px;
   width: 100%;
   margin: 0;
 }
 /* line 28, ../src/modules/_home.scss */
-#mission hr.bar-orange {
+#mission .hr.bar-orange {
   background: #FFAD33;
+  color: #FFAD33;
 }
-/* line 32, ../src/modules/_home.scss */
-#mission hr.bar-cyan {
+/* line 33, ../src/modules/_home.scss */
+#mission .hr.bar-cyan {
   background: #33EAFF;
+  color: #33EAFF;
 }
-/* line 36, ../src/modules/_home.scss */
-#mission hr.bar-pink {
+/* line 38, ../src/modules/_home.scss */
+#mission .hr.bar-pink {
   background: #FF3385;
+  color: #FF3385;
 }
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 46, ../src/modules/_home.scss */
+  /* line 49, ../src/modules/_home.scss */
   #mission .content p {
     font-size: 1.875em;
     padding: 1.2em 0.1em;
   }
-  /* line 51, ../src/modules/_home.scss */
+  /* line 54, ../src/modules/_home.scss */
   #mission hr {
     height: 8px;
   }
