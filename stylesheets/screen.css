@@ -336,18 +336,18 @@ input:focus {
   /* line 28, ../src/modules/_header.scss */
   #header #logo {
     margin-left: -100%;
-    width: 20.37%;
+    width: 25.926%;
     text-align: left;
   }
   /* line 34, ../src/modules/_header.scss */
   #header div.nav {
-    margin-left: -77.778%;
-    width: 53.704%;
+    margin-left: -72.222%;
+    width: 42.593%;
   }
   /* line 39, ../src/modules/_header.scss */
   #header #search {
-    margin-left: -22.222%;
-    width: 20.37%;
+    margin-left: -27.778%;
+    width: 25.926%;
     text-align: right;
   }
 }
