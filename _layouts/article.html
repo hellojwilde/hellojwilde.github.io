@@ -2,29 +2,31 @@
 layout: default
 type: entry
 ---
-<div class="hentry">
-    <div class="entry-header">
-        <h1 class="entry-title">
-            <a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a>
-        </h1>
+<div id="content"><div class="content">
+    <div class="hentry">
+        <div class="entry-header">
+            <h1 class="entry-title">
+                <a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a>
+            </h1>
+            
+            <div class="entry-meta">
+                <p class="entry-date">
+                    <abbr class="updated" name="{{ page.date | date: '%Y-%m-%d' }}">
+                        {{ page.date | date: '%d %B %Y' }}
+                    </abbr>
+                </p>
+                <p class="entry-author">
+                    <span class="vcard author">
+                        <a class="url fn" href="/about.html">
+                            Jonathan Wilde
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
         
-        <div class="entry-meta">
-            <p class="entry-date">
-                <abbr class="updated" name="{{ page.date | date: '%Y-%m-%d' }}">
-                    {{ page.date | date: '%d %B %Y' }}
-                </abbr>
-            </p>
-            <p class="entry-author">
-                <span class="vcard author">
-                    <a class="url fn" href="/about.html">
-                        Jonathan Wilde
-                    </a>
-                </span>
-            </p>
+        <div class="entry-content">
+            {{ content }}
         </div>
     </div>
-    
-    <div class="entry-content">
-        {{ content }}
-    </div>
-</div>
+</div></div>

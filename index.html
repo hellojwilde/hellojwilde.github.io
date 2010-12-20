@@ -3,36 +3,45 @@ layout: default
 title: SpeedBreeze
 type: feed
 ---
-<p class="mission">
-    Hi. I'm <a href="/about.html">Jonathan</a>. I enjoy managing theatrical
-    productions and building intuitive software.
-</p>
-<hr />
 
-<div class="hfeedgroup">
-    <div class="hfeed">
-        {% for post in site.posts %}
-        <div class="hentry teaser">
-            <h2 class="entry-title">
-                <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-            </h2>
-            
-            <div class="entry-summary">
-                <p>{{ post.summary }}</p>
-            </div>
-            
-            <div class="entry-meta">
-                <p class="entry-date">
-                    <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
-                        {{ post.date | date: '%d %B %Y' }}
-                    </abbr>
-                </p>
-                
-                <p class="entry-read">
-                    <a href="{{ post.url }}" rel="bookmark">Read</a>
-                </p>
-            </div>
-        </div>
-        {% endfor %}
+
+<div id="mission">
+    <div class="content">
+        Hi. I'm <a href="/about.html">Jonathan</a>. I enjoy managing theatrical
+        productions and building intuitive software.
     </div>
-</div>   
+    
+    <hr class="bar-orange" />
+    <hr class="bar-pink" />
+    <hr class="bar-cyan" />
+</div>
+
+<div id="content"><div class="content">
+    <div class="split">
+        <div class="main">
+            {% for post in site.posts %}
+            <div class="hentry teaser">
+                <h2 class="entry-title">
+                    <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+                </h2>
+                
+                <div class="entry-summary">
+                    <p>{{ post.summary }}</p>
+                </div>
+                
+                <div class="entry-meta">
+                    <p class="entry-date">
+                        <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+                            {{ post.date | date: '%d %B %Y' }}
+                        </abbr>
+                    </p>
+                    
+                    <p class="entry-read">
+                        <a href="{{ post.url }}" rel="bookmark">Read</a>
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div></div>
