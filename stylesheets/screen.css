@@ -582,35 +582,47 @@ body.entry .entry-image-row .i3 {
 }
 /* line 12, ../src/modules/_home.scss */
 #mission .content {
-  font-size: 1.875em;
-  color: #593400;
-  font-family: "Museo Slab", serif;
-  text-shadow: #FFECCE, 0, 1px, 1px;
   background-image: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, color-stop(0%, #ffdba4), color-stop(100%, #ffad33));
   background-image: -moz-radial-gradient(bottom center, circle, #ffdba4 0%, #ffad33 100%);
   background-image: radial-gradient(bottom center, circle, #ffdba4 0%, #ffad33 100%);
-  padding: 1.5em 0;
 }
-/* line 21, ../src/modules/_home.scss */
+/* line 13, ../src/modules/_home.scss */
+#mission .content p {
+  padding: 1.2em 0;
+  font-size: 1.875em;
+  color: #593400;
+  font-family: "Museo Slab", serif;
+  text-shadow: #FFECCE 0 1px 1px;
+  line-height: 120%;
+  text-align: center;
+}
+/* line 26, ../src/modules/_home.scss */
 #mission hr {
   height: 3px;
   width: 100%;
+  margin: 0;
 }
-/* line 25, ../src/modules/_home.scss */
+/* line 31, ../src/modules/_home.scss */
 #mission hr.bar-orange {
   background: #FFAD33;
 }
-/* line 29, ../src/modules/_home.scss */
+/* line 35, ../src/modules/_home.scss */
 #mission hr.bar-cyan {
   background: #33EAFF;
 }
-/* line 33, ../src/modules/_home.scss */
+/* line 39, ../src/modules/_home.scss */
 #mission hr.bar-pink {
   background: #FF3385;
 }
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
-@media (min-width: 35em) {}
+@media (min-width: 35em) {
+  /* line 49, ../src/modules/_home.scss */
+  #mission hr {
+    height: 8px;
+  }
+}
+
 /* | LAYOUT
    +------------------------------------------------------------------------- */
 /* | Notebook, Tablet Layout  - - - - - - - - - - - - - - - - - - - - - - - - */
