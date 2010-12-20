@@ -603,7 +603,7 @@ body.entry .entry-image-row .i3 {
 /* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* line 9, ../src/modules/_home.scss */
 #mission {
-  background: #FFAD33;
+  background: #ffd89d;
   background-image: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 550, color-stop(0%, #ffdba4), color-stop(100%, #ffad33));
   background-image: -moz-radial-gradient(bottom center, circle, #ffdba4 0%, #ffad33 550px);
   background-image: radial-gradient(bottom center, circle, #ffdba4 0%, #ffad33 550px);
