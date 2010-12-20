@@ -107,7 +107,7 @@ a img {
 }
 
 @media (min-width: 60em) {
-  /* line 18, ../src/_layout.scss */
+  /* line 20, ../src/_layout.scss */
   .content {
     width: 54em;
   }
@@ -442,31 +442,14 @@ input:focus {
    +------------------------------------------------------------------------- */
 /* | Notebook, Tablet Layout  - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 7, ../src/modules/_entries.scss */
-  .hfeedgroup {
-    float: left;
-    width: 100%;
-    display: block;
-    position: relative;
-  }
-
-  /* line 11, ../src/modules/_entries.scss */
-  .hfeed {
-    position: relative;
-    float: left;
-    left: 100%;
-    width: 64.815%;
-    margin-left: -100%;
-  }
-
-  /* line 18, ../src/modules/_entries.scss */
+  /* line 8, ../src/modules/_entries.scss */
   body.entry .entry-header {
     float: left;
     width: 100%;
     display: block;
     position: relative;
   }
-  /* line 21, ../src/modules/_entries.scss */
+  /* line 11, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-title {
     position: relative;
     float: left;
@@ -474,7 +457,7 @@ input:focus {
     width: 64.815%;
     margin-left: -100%;
   }
-  /* line 27, ../src/modules/_entries.scss */
+  /* line 17, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta {
     position: relative;
     float: left;
@@ -482,17 +465,17 @@ input:focus {
     margin-left: -33.333%;
     width: 31.481%;
   }
-  /* line 35, ../src/modules/_entries.scss */
+  /* line 25, ../src/modules/_entries.scss */
   body.entry .entry-content p, body.entry .entry-content ul, body.entry .entry-content ol {
     width: 64.815%;
   }
-  /* line 39, ../src/modules/_entries.scss */
+  /* line 29, ../src/modules/_entries.scss */
   body.entry .entry-content .warn, body.entry .entry-content .note {
     float: right;
     width: 31.481%;
     margin-right: 1.852%;
   }
-  /* line 44, ../src/modules/_entries.scss */
+  /* line 34, ../src/modules/_entries.scss */
   body.entry .entry-content .warn p, body.entry .entry-content .note p {
     width: auto;
   }
@@ -501,27 +484,27 @@ input:focus {
 /* | SKIN
    +------------------------------------------------------------------------- */
 /* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* line 57, ../src/modules/_entries.scss */
+/* line 47, ../src/modules/_entries.scss */
 #content {
   padding: 1em;
 }
 
-/* line 62, ../src/modules/_entries.scss */
+/* line 52, ../src/modules/_entries.scss */
 .entry-meta p {
   color: #929292;
   text-indent: 0;
   margin: 0;
 }
-/* line 68, ../src/modules/_entries.scss */
+/* line 58, ../src/modules/_entries.scss */
 .entry-meta abbr {
   color: #666;
 }
 
-/* line 74, ../src/modules/_entries.scss */
+/* line 64, ../src/modules/_entries.scss */
 body.entry .entry-meta {
   margin-bottom: 1.125em;
 }
-/* line 78, ../src/modules/_entries.scss */
+/* line 68, ../src/modules/_entries.scss */
 body.entry .entry-image-row {
   float: left;
   width: 100%;
@@ -529,41 +512,41 @@ body.entry .entry-image-row {
   position: relative;
   margin-bottom: 1em;
 }
-/* line 83, ../src/modules/_entries.scss */
+/* line 73, ../src/modules/_entries.scss */
 body.entry .entry-image-row img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-/* line 88, ../src/modules/_entries.scss */
+/* line 78, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i1, body.entry .entry-image-row .i2, body.entry .entry-image-row .i3 {
   position: relative;
   float: left;
   left: 100%;
   width: 31.481%;
 }
-/* line 92, ../src/modules/_entries.scss */
+/* line 82, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i1 {
   margin-left: -100%;
 }
-/* line 95, ../src/modules/_entries.scss */
+/* line 85, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i2 {
   margin-left: -66.667%;
 }
-/* line 98, ../src/modules/_entries.scss */
+/* line 88, ../src/modules/_entries.scss */
 body.entry .entry-image-row .i3 {
   margin-left: -33.333%;
 }
 
-/* line 104, ../src/modules/_entries.scss */
+/* line 94, ../src/modules/_entries.scss */
 .teaser {
   margin-bottom: 2em;
 }
-/* line 107, ../src/modules/_entries.scss */
+/* line 97, ../src/modules/_entries.scss */
 .teaser .entry-meta {
   overflow: auto;
 }
-/* line 110, ../src/modules/_entries.scss */
+/* line 100, ../src/modules/_entries.scss */
 .teaser .entry-meta p {
   float: left;
   margin-right: 2em;
@@ -571,20 +554,20 @@ body.entry .entry-image-row .i3 {
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 120, ../src/modules/_entries.scss */
+  /* line 110, ../src/modules/_entries.scss */
   #content {
     padding: 0;
   }
 
-  /* line 125, ../src/modules/_entries.scss */
+  /* line 115, ../src/modules/_entries.scss */
   body.entry .entry-header {
     padding: 2.45em 0 1.3em;
   }
-  /* line 128, ../src/modules/_entries.scss */
+  /* line 118, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta {
     margin-bottom: 0;
   }
-  /* line 129, ../src/modules/_entries.scss */
+  /* line 119, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta p {
     text-align: right;
   }
@@ -593,25 +576,41 @@ body.entry .entry-image-row .i3 {
 /* | SKIN
    +------------------------------------------------------------------------- */
 /* | Mobile Base Skin - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* line 6, ../src/modules/_home.scss */
-p.mission {
+/* line 9, ../src/modules/_home.scss */
+#mission {
+  background: #FFAD33;
+}
+/* line 12, ../src/modules/_home.scss */
+#mission .content {
+  font-size: 1.875em;
+  color: #593400;
   font-family: "Museo Slab", serif;
-  padding: 0 5%;
-  font-size: 1.3em;
-  margin: 1em 0;
-  line-height: 150%;
-  text-align: center;
+  text-shadow: #FFECCE, 0, 1px, 1px;
+  background-image: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, color-stop(0%, #ffdba4), color-stop(100%, #ffad33));
+  background-image: -moz-radial-gradient(bottom center, circle, #ffdba4 0%, #ffad33 100%);
+  background-image: radial-gradient(bottom center, circle, #ffdba4 0%, #ffad33 100%);
+  padding: 1.5em 0;
+}
+/* line 21, ../src/modules/_home.scss */
+#mission hr {
+  height: 3px;
+  width: 100%;
+}
+/* line 25, ../src/modules/_home.scss */
+#mission hr.bar-orange {
+  background: #FFAD33;
+}
+/* line 29, ../src/modules/_home.scss */
+#mission hr.bar-cyan {
+  background: #33EAFF;
+}
+/* line 33, ../src/modules/_home.scss */
+#mission hr.bar-pink {
+  background: #FF3385;
 }
 
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
-@media (min-width: 35em) {
-  /* line 18, ../src/modules/_home.scss */
-  p.mission {
-    padding: 0 10%;
-    font-size: 1.9em;
-  }
-}
-
+@media (min-width: 35em) {}
 /* | LAYOUT
    +------------------------------------------------------------------------- */
 /* | Notebook, Tablet Layout  - - - - - - - - - - - - - - - - - - - - - - - - */
