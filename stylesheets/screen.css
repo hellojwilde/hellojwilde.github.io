@@ -577,24 +577,41 @@ body.entry .entry-image-row .i3 {
   margin-right: 2em;
 }
 
+/* line 107, ../src/modules/_entries.scss */
+.micro {
+  list-style: none;
+  overflow: auto;
+  margin: 0;
+}
+/* line 112, ../src/modules/_entries.scss */
+.micro .entry-meta {
+  display: none;
+}
+
 /* | Notebook, Tablet Skin  - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 35em) {
-  /* line 110, ../src/modules/_entries.scss */
+  /* line 120, ../src/modules/_entries.scss */
   #content {
     padding: 0;
   }
 
-  /* line 115, ../src/modules/_entries.scss */
+  /* line 125, ../src/modules/_entries.scss */
   body.entry .entry-header {
     padding: 2.45em 0 1.3em;
   }
-  /* line 118, ../src/modules/_entries.scss */
+  /* line 128, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta {
     margin-bottom: 0;
   }
-  /* line 119, ../src/modules/_entries.scss */
+  /* line 129, ../src/modules/_entries.scss */
   body.entry .entry-header .entry-meta p {
     text-align: right;
+  }
+
+  /* line 137, ../src/modules/_entries.scss */
+  .micro .entry-date {
+    float: left;
+    width: 10em;
   }
 }
 
