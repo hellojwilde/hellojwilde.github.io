@@ -1,47 +1,97 @@
 ---
 layout: default
-title: SpeedBreeze
-type: feed
+title: Jonathan Wilde
+classes: home hresume
 ---
-<div id="mission">
-    <div class="content"><p>
-        Hi. I'm <a href="/about.html">Jonathan</a>. I enjoy managing theatrical
-        productions and building intuitive software.
-    </p></div>
+<div class="section">
+    <div class="annotation">
+        <h2>Articles</h2>
+    </div>
     
-    <div class="hr bar-orange"></div>
-    <div class="hr bar-pink"></div>
-    <div class="hr bar-cyan"></div>
-</div>
-
-<div id="content"><div class="content">
-    <div class="split">
-        <div class="main">
-            {% for post in site.posts limit:4 %}
-            <div class="hentry teaser">
-                <h2 class="entry-title">
-                    <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-                </h2>
-                
-                <div class="entry-summary">
-                    <p>{{ post.summary }}</p>
-                </div>
-                
-                <div class="entry-meta">
-                    <p class="entry-date">
-                        <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
-                            {{ post.date | date: '%d %B %Y' }}
-                        </abbr>
-                    </p>
-                    
-                    <p class="entry-read">
-                        <a href="{{ post.url }}" rel="bookmark">Read</a>
-                    </p>
-                </div>
-            </div>
-            {% endfor %}
+    <div class="content hfeed">
+        {% for post in site.posts limit:3 %}
+        <div class="hentry">
+            <h3 class="entry-title"><a href="{{ post.url }}" rel="bookmark">
+                {{ post.title }}
+            </a></h3>
             
-            <a href="/articles.html" class="more">More Articles</a>
+            <p class="entry-summary">
+                {{ post.summary }}
+            </p>
+            
+            <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+                {{ post.date | date: '%d %B %Y' }}</abbr> 
+        </div>
+        {% endfor %}
+        
+        <div class="button-bar">
+            <a href="archives.htm" rel="archives" class="button go">All Posts</a>
         </div>
     </div>
-</div></div>
+</div>
+
+<div class="section">
+    <div class="subsection">
+        <div class="annotation">
+            <h2>Projects</h2>
+        </div>
+        
+        <div class="project">
+            <h3 class="project-title"><a href="#" rel="bookmark">
+                Kapili
+            </a></h3>
+            
+            <p class="project-summary">
+                Messaging, re&shy;vised. Swift like IM, arch&shy;ivable
+                like email.  Simple, se&shy;cure, dis&shy;tributed.
+                Re&shy;invents minimally.
+            </p>
+            
+            <abbr class="date" name="2011-03">Coming March 2011.</abbr> 
+        </div>
+        
+        <div class="project alt">
+            <h3 class="project-title"><a href="#" rel="bookmark">
+                Feed Stats
+            </a></h3>
+            
+            <p class="project-summary">
+                FeedBurner, beau&shy;tifully in&shy;tegrated into Word&shy;Press.
+                Su&shy;pports i18n. Trans&shy;lated by a vol&shy;unteer into German.
+            </p>
+            
+            <abbr class="date" name="2008">Since 2008.</abbr> 
+        </div>
+    </div>
+    
+    <div class="subsection">
+        <div class="content">
+            <div class="button-bar">
+                <a href="http://www.github.com/speedbreeze"
+                   rel="archives" class="button go">All Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="annotation">
+        <h2>About</h2>
+    </div>
+    
+    <div class="content summary">
+        <p>
+            <strong>Jonathan Wilde</strong> is a high-school senior who
+            likes responsive design, minimalism, and writing about
+            himself in the 3rd person.  He hails from the San Francisco
+            Bay Area.
+        </p>
+        <p>
+            If you need to get in touch, @mention
+            <a href="http://www.twitter.com/speedbreeze">speedbreeze</a>
+            on Twitter. If you need to provide feedback regarding a
+            project of mine, please use the appropriate project's issue
+            tracker on <a href="http://www.github.com/speedbreeze">Github</a>.  
+        </p>
+    </div>
+</div>
