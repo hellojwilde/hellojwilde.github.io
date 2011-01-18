@@ -18,7 +18,7 @@ layout: nil
     
     {% for post in site.posts %}
     <url>
-        <loc>http://speedbreeze.com/{{ post.url }}</loc>
+        <loc>http://speedbreeze.com{{ post.url }}</loc>
         <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
     </url>
     {% endfor %}
