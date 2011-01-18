@@ -1,0 +1,14 @@
+---
+layout: feed
+---
+{% for post in site.categories.plone %}
+<entry>
+    <title>{{ post.title }}</title>
+    <link rel="alternate" type="text/html"
+          href="http://www.speedbreeze.com/{{ post.url }}" />
+    <summary>
+        {{ post.summary }}
+    </summary>
+    <published>{{ post.date | date: '%Y-%m-%d' }}</published>
+</entry>
+{% endfor %}

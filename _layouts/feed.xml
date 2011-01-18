@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feed xmlns="http://www.w3.org/2005/atom">
+    <title>{{ site.title }}</title>
+    <subtitle>{{ site.subtitle }}</subtitle>
+    
+    <link href="http://www.speedbreeze.com/{{ page.url }}" rel="self" />
+    <link href="http://www.speedbreeze.com/" />
+    <id>http://www.speedbreeze.com/</id>
+    <updated>{{ site.time | date: '%Y-%m-%dT%H:%i%sZ' }}</updated>
+    
+    <author>
+        <name>{{ site.author }}</name>
+    </author>
+    
+    {{ content }}
+</feed>
