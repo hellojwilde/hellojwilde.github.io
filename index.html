@@ -19,7 +19,7 @@ classes: home hresume
                 {{ post.summary }}
             </p>
 
-            <abbr class="updated" name="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">
+            <abbr class="updated" name="{{ post.date | date: '%Y-%m-%d' }}">
                 {{ post.date | date: '%d %B %Y' }}</abbr>
         </div>
         {% endfor %}
