@@ -1,7 +1,6 @@
 ---
 layout: article
 title: The EeePC 900 (Linux) Partition Table
-section: articles
 summary:
     The default partitions on the EeePC 900 are a bit odd.  I put together
     a couple of reference tables that explain what they're about. 

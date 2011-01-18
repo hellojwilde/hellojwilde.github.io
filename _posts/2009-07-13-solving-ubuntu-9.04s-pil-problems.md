@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Solving Ubuntu 9.04's PIL Problems
-section: articles
 summary:
     I was having issues with PIL not being recognized on my Ubuntu machine.
     Here's my workaround for installing it.
