@@ -6,9 +6,10 @@ layout: feed
     <title>{{ post.title }}</title>
     <link rel="alternate" type="text/html"
           href="http://www.speedbreeze.com/{{ post.url }}" />
+    <id>http://www.speedbreeze.com{{ post.url }}</id>
     <summary>
         {{ post.summary }}
     </summary>
-    <published>{{ post.date | date: '%Y-%m-%d' }}</published>
+    <published>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</published>
 </entry>
 {% endfor %}
