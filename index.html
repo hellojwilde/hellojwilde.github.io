@@ -7,23 +7,23 @@ classes: home hresume
     <div class="annotation">
         <h2>Articles</h2>
     </div>
-    
+
     <div class="content hfeed">
         {% for post in site.posts limit:3 %}
         <div class="hentry">
             <h3 class="entry-title"><a href="{{ post.url }}" rel="bookmark">
                 {{ post.title }}
             </a></h3>
-            
+
             <p class="entry-summary">
                 {{ post.summary }}
             </p>
-            
-            <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
-                {{ post.date | date: '%d %B %Y' }}</abbr> 
+
+            <abbr class="updated" name="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">
+                {{ post.date | date: '%d %B %Y' }}</abbr>
         </div>
         {% endfor %}
-        
+
         <div class="button-bar">
             <a href="archives.html" rel="archives" class="button go">All Posts</a>
         </div>
@@ -35,51 +35,51 @@ classes: home hresume
         <div class="annotation">
             <h2>Projects</h2>
         </div>
-        
+
         <div class="project">
             <h3 class="project-title"><a href="/kapili" rel="bookmark">
                 Kapili
             </a></h3>
-            
+
             <p class="project-summary">
                 Messaging, re&shy;vised. Swift like IM, arch&shy;ivable
                 like email.  Simple, se&shy;cure, dis&shy;tributed.
                 Re&shy;invents minimally.
             </p>
-            
-            <abbr class="date" name="2011-03">Coming March 2011.</abbr> 
+
+            <abbr class="date" name="2011-03">Coming March 2011.</abbr>
         </div>
-        
+
         <div class="project alt">
             <h3 class="project-title"><a href="/feed-stats" rel="bookmark">
                 Feed Stats
             </a></h3>
-            
+
             <p class="project-summary">
                 FeedBurner, beau&shy;tifully in&shy;tegrated into Word&shy;Press.
                 Su&shy;pports <abbr title="internationalization">i18n</abbr>.
                 Trans&shy;lated by a vol&shy;unteer into German.
             </p>
-            
-            <abbr class="date" name="2008">Since 2008.</abbr> 
+
+            <abbr class="date" name="2008">Since 2008.</abbr>
         </div>
     </div>
-    
+
     <div class="subsection">
         <div class="project">
             <h3 class="project-title"><a href="https://github.com/speedbreeze/quizzical" rel="bookmark">
                 Quizzical
             </a></h3>
-            
+
             <p class="project-summary">
                 Online quizzes, made simple.  Powered by Kohana 3.  Origin&shy;ally
                 for <a href="http://www.spartanrobotics.org">Spartan Ro&shy;botics</a>.
             </p>
-            
-            <abbr class="date" name="2007">Since 2007. Open-source since July 2010.</abbr> 
+
+            <abbr class="date" name="2007">Since 2007. Open-source since July 2010.</abbr>
         </div>
     </div>
-    
+
     <div class="subsection">
         <div class="content">
             <div class="button-bar">
@@ -94,7 +94,7 @@ classes: home hresume
     <div class="annotation">
         <h2>About</h2>
     </div>
-    
+
     <div class="content summary">
         <p>
             <strong>Jonathan Wilde</strong> is a high-school senior who
@@ -107,7 +107,7 @@ classes: home hresume
             <a href="http://www.twitter.com/speedbreeze">speedbreeze</a>
             on Twitter. If you need to provide feedback regarding a
             project of mine, please use the appropriate project's issue
-            tracker on <a href="http://www.github.com/speedbreeze">Github</a>.  
+            tracker on <a href="http://www.github.com/speedbreeze">Github</a>.
         </p>
     </div>
 </div>
