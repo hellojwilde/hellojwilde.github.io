@@ -7,8 +7,8 @@ classes: archives timeline
 
 <div class="hfeed timeline">
     {% for post in site.posts %}
-    <div class="hentry">
-        <div class="{% cycle 'entry-content', 'entry-content alt' %}">
+    <div class="{% cycle 'hentry', 'hentry alt' %}">
+        <div class="entry-content">
             <h3 class="entry-title"><a href="{{ post.url }}" rel="bookmark">
                 {{ post.title }}
             </a></h3>
