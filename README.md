@@ -13,9 +13,7 @@ trying to migrate my data if I want to move to a different platform or
 web host in the future.
 
 I want my site built on a platform that's relatively human-readable and
-probably future-proof.  Jekyll makes a good choice for this.  It's
-flexible and extensible.  It's based on open formats.  It can be used
-with git/GitHub--I can get free revision tracking!
+probably future-proof.  Jekyll makes a good choice for this.
 
 License
 -------
