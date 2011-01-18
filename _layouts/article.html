@@ -6,20 +6,20 @@ classes: post
 <div class="hentry">
     <div class="subsection">
         <div class="content">
-            <h2 class="entry-title">{{ post.title }}</h2>
+            <h2 class="entry-title">{{ page.title }}</h2>
         </div>
     </div>
     
     <div class="subsection">
         <div class="annotation">
-            <p><abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
-                {{ post.date | date: '%d %B %Y' }}
+            <p><abbr class="published" name="{{ page.date | date: '%Y-%m-%d' }}">
+                {{ page.date | date: '%d %B %Y' }}
             </abbr></p>
         </div>
         
         <div class="content">
             <p class="entry-summary">
-                {{ post.summary }}
+                {{ page.summary }}
             </p>
             
             <div class="entry-content"> 
