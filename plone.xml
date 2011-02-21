@@ -8,7 +8,7 @@ layout: feed
           href="http://www.speedbreeze.com/{{ post.url }}" />
     <id>http://www.speedbreeze.com{{ post.url }}</id>
     <summary>
-        {{ post.summary }}
+        {{ post.content }}
     </summary>
     <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
 </entry>
