@@ -1,5 +1,5 @@
-speedbreeze.com
-===============
+jwilde.me
+=========
 
 This repository holds data for my personal website in a
 Jekyll-compatible format.
@@ -18,6 +18,8 @@ probably future-proof.  Jekyll makes a good choice for this.
 License
 -------
 
-For the time being, all of the content here is copyright 2010 Jonathan
-Wilde.  If you want to borrow something, please contact me at
-<jonathan+borrowing@speedbreeze.com>.
+Source code: 
+Copyright 2010 - 2012 Jonathan Wilde.
+Released under the MIT license: http://www.opensource.org/licenses/mit-license.php
+
+All rights to the article text is reserved to Jonathan Wilde.
