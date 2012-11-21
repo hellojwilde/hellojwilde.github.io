@@ -8,8 +8,10 @@ layout: feed
           href="http://www.speedbreeze.com{{ post.url }}" />
     <id>http://www.speedbreeze.com{{ post.url }}</id>
     <summary>
-        {{ post.content }}
+        {{ post.summary }}
     </summary>
+    <content type="html">
+        <![CDATA[{{ post.content }}]]>
     <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
 </entry>
 {% endfor %}
