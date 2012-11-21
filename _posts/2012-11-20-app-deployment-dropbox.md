@@ -7,7 +7,7 @@ summary:
 ---
 
 <div class="warning">
-This is a **very** belated post about my 2012 summer internship at Mozilla. It represents the state of affairs of Firefox Metro as of August 2012; things have changed since then.
+This is a rather belated post about my 2012 summer internship at Mozilla. It represents the state of affairs of Firefox Metro in August 2012; things have changed since then.
 </div>
 
 Windows 8 is ambitious. Most operating systems support an imprecise input method (touch) or a precise input method (mouse or pen). Windows 8 supports both, across tablets, laptops, and desktops.
