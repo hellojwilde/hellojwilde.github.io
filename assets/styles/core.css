@@ -36,19 +36,16 @@ caption, th, td {
 }
 
 q, blockquote {
-  quotes: '"' '"' "'" "'"
+  quotes: "" ""; 
 }
 
-q:before, blockquote:before {
-  content: open-quote
-}
-
-q:after, blockquote:after {
-  content: close-quote
+q:before, blockquote:before, q:after, blockquote:after {
+  content: ""
 }
 
 blockquote {
   color: #999;
+  padding-left: 1em;
 }
 
 a img {
@@ -164,6 +161,8 @@ img {
 
 .warning {
   color: #6A0000;
+  background: #FFB9B9;
+  padding: 0.5em;
 }
 
 .nametag {
