@@ -36,11 +36,19 @@ caption, th, td {
 }
 
 q, blockquote {
-  quotes: "" ""
+  quotes: '"' '"' "'" "'"
 }
 
-q:before, q:after, blockquote:before, blockquote:after {
-  content: ""
+q:before, blockquote:before {
+  content: open-quote
+}
+
+q:after, blockquote:after {
+  content: close-quote
+}
+
+blockquote {
+  color: #999;
 }
 
 a img {
@@ -74,6 +82,7 @@ p {
 
 pre, code {
   font-family: monospace;
+  line-height: 100%;
 }
 
 pre {
@@ -151,6 +160,10 @@ img {
 
 .button-bar {
   overflow: auto
+}
+
+.warning {
+  color: #6A0000;
 }
 
 .nametag {
