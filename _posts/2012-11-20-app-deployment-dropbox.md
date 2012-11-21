@@ -7,7 +7,7 @@ summary:
 ---
 
 <div class="warning">
-This is a *very* belated post about my 2012 summer internship at Mozilla. It represents the state of affairs of Firefox Metro as of August 2012; things have changed since then.
+This is a **very** belated post about my 2012 summer internship at Mozilla. It represents the state of affairs of Firefox Metro as of August 2012; things have changed since then.
 </div>
 
 Windows 8 is ambitious. Most operating systems support an imprecise input method (touch) or a precise input method (mouse or pen). Windows 8 supports both, across tablets, laptops, and desktops.
@@ -51,7 +51,7 @@ A few weeks later, Yuan from UX asked:
 We couldn't yet generate an installer for Metro Firefox because some key build system changes hadn't landed.
 
 <div class="footnote">
-These have since landed and power the [Firefox Metro Preview](https://blog.mozilla.org/futurereleases/2012/10/04/firefox-metro-preview/).
+These have since landed and power the <a href="https://blog.mozilla.org/futurereleases/2012/10/04/firefox-metro-preview/">Firefox Metro Preview</a>.
 </div>
 
 So, I decided turn my Dropbox builds into a shared folder for Yuan to use. I automated the setup process with some Python scripts that generated the appropriate Windows Registry files based the user's Dropbox folder location and documented [the installation process](https://etherpad.mozilla.org/jwilde-awesomesauce-metro-builds) publicly on Etherpad. It was janky, but usable as a temporary solution for bleeding-edge testers.
