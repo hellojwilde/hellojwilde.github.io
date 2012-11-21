@@ -24,7 +24,7 @@ But, it's not a simple solution. Pushing a patch from desktop to tablet involves
 
 This is cumbersome. What if I all I had to do was build on the desktop, wait a bit, and restart Firefox on the tablet?
 
-# Enter, Dropbox
+## Enter, Dropbox
 
 I figured I could accomplish this by using Dropbox to synchronize my working copy.
 
@@ -42,7 +42,7 @@ To keep file paths short on the command line, I put Dropbox folder in the root o
 
 Firefox started working after I moved the Dropbox folder to my user directory on the tablet.
 
-# Sharing
+## Sharing
 
 A few weeks later, Yuan from UX asked:
 
