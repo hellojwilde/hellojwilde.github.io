@@ -33,6 +33,15 @@ a.button:active {
   margin-bottom: 3em;
 }
 
+.warning {
+  -moz-border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -khtml-border-radius: 0.4em;
+  border-radius: 0.4em;
+}
+
 .nametag {
   margin: 0 auto;
   width: 16em;
