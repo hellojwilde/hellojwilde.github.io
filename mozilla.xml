@@ -11,7 +11,7 @@ layout: feed
         {{ post.summary }}
     </summary>
     <content type="html">
-        <![CDATA[{{ post.content }}]]>
+        {{ post.content }}
     </content>
     <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
 </entry>
