@@ -10,8 +10,10 @@ layout: feed
     <summary>
         {{ post.summary }}
     </summary>
-    <content type="html">
+    <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
         {{ post.content }}
+        </div>
     </content>
     <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
 </entry>
