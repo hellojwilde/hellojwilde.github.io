@@ -23,7 +23,7 @@ License
 Copyright 2010 - 2012 Jonathan Wilde.
 Licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
 
-### Writing and Visuals (Photos, Graphics, etc):
+### Writing and Visuals (Photos, Graphics, etc)
 
 Copyright 2010 - 2012 Jonathan Wilde.
 Licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
