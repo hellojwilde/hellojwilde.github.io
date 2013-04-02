@@ -8,7 +8,8 @@ summary:
 ---
 
 <div>
-<script src="//storify.com/speedbreeze/tim-berners-lee-at-tufts.js?header=false&border=false"></script>
+<script src="//storify.com/speedbreeze/tim-berners-lee-at-tufts.js?header=false&border=false">
+</script>
 <noscript>
   <a href="//storify.com/speedbreeze/tim-berners-lee-at-tufts" target="_blank">
   View the story "Tim Berners-Lee at Tufts" on Storify</a>
