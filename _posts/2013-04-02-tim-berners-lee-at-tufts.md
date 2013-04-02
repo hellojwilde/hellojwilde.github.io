@@ -4,7 +4,7 @@ title: Tim Berners-Lee at Tufts
 summary:
     Sir Tim Berners-Lee, the inventor of the World Wide Web, 
     lectured about the creation of the web and
-    his vision for the future of it.
+    his vision for the future of it at Tufts University on April 1.
 ---
 
 <div>
