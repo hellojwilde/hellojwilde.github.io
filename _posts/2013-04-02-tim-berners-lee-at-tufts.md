@@ -7,8 +7,10 @@ summary:
     his vision for the future of it.
 ---
 
-<script src="//storify.com/speedbreeze/tim-berners-lee-at-tufts.js?header=false"></script>
+<div>
+<script src="//storify.com/speedbreeze/tim-berners-lee-at-tufts.js?header=false&border=false"></script>
 <noscript>
-  [<a href="//storify.com/speedbreeze/tim-berners-lee-at-tufts" target="_blank">
-  View the story "Tim Berners-Lee at Tufts" on Storify</a>]
+  <a href="//storify.com/speedbreeze/tim-berners-lee-at-tufts" target="_blank">
+  View the story "Tim Berners-Lee at Tufts" on Storify</a>
 </noscript>
+</div>
