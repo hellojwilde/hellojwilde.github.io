@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Learning how to share a vision with that inevitably awful first draft.
+title: Shipping Prototypes at Hackathons
 summary:
-  Lessons learned about staying focused on communicating your product ideas without getting excessively lost in engineering decisions.
+  Learning how to share a vision with that inevitably awful first draft.
 ---
 "Let's give it up for 'worse'!"
 
