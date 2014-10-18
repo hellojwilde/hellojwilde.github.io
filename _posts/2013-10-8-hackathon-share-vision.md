@@ -4,6 +4,8 @@ title: Shipping Prototypes at Hackathons
 summary:
   Learning how to share a vision with that inevitably awful first draft.
 ---
+<em>Originally posted on <a href="http://blog.jwilde.me/2013/10/08/why-ive-started-going-to-hackathons/#more-45">Wordpress</a>.</em>
+
 "Let's give it up for 'worse'!"
 
 Tom Lehman of <a href="http://en.wikipedia.org/wiki/Rap_Genius">Rap Genius</a> emceed this year's HackMIT--a competition where teams try to pull off the most impressive stunt with technology in 24 hours.
