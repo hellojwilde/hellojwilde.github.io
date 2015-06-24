@@ -5,8 +5,8 @@ layout: feed
 <entry>
     <title>{{ post.title }}</title>
     <link rel="alternate" type="text/html"
-          href="http://www.speedbreeze.com{{ post.url }}" />
-    <id>http://www.speedbreeze.com{{ post.url }}</id>
+          href="http://jwilde.me{{ post.url }}" />
+    <id>http://jwilde.me{{ post.url }}</id>
     <summary>
         {{ post.content }}
     </summary>
