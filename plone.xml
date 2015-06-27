@@ -2,14 +2,5 @@
 layout: feed
 ---
 {% for post in site.categories.plone %}
-<entry>
-    <title>{{ post.title }}</title>
-    <link rel="alternate" type="text/html"
-          href="http://jwilde.me{{ post.url }}" />
-    <id>http://jwilde.me{{ post.url }}</id>
-    <summary>
-        {{ post.content }}
-    </summary>
-    <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
-</entry>
+{% include feed_entry.xml %}
 {% endfor %}

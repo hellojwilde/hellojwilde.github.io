@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>{{ site.title }}</title>
-    <subtitle>{{ site.subtitle }}</subtitle>
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.subtitle }}</subtitle>
 
-    <link href="http://speedbreeze.com{{ page.url }}" rel="self" />
-    <link href="http://speedbreeze.com/" />
-    <id>http://www.speedbreeze.com/</id>
-    <updated>{{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
+  <link href="{{ site.public_url }}{{ page.url }}" rel="self" />
+  <link href="{{ site.public_url }}/" />
+  <id>{{ site.public_url }}/</id>
+  <updated>{{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
 
-    <author>
-        <name>Jonathan Wilde</name>
-    </author>
+  <author>
+    <name>{{ site.author }}</name>
+  </author>
 
-    {{ content }}
+  {{ content }}
 </feed>

@@ -1,25 +1,18 @@
 ---
-layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>http://jwilde.me/</loc>
-        <lastmod>{{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://jwilde.me/archives.html</loc>
-        <lastmod>{{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    {% for post in site.posts %}
-    <url>
-        <loc>http://jwilde.me{{ post.url }}</loc>
-        <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
-    </url>
-    {% endfor %}
+  <url>
+    <loc>{{ site.public_url }}/</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ site.public_url }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
+  </url>
+  {% endfor %}
 </urlset>

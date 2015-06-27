@@ -1,0 +1,15 @@
+<entry>
+  <title>{{ post.title }}</title>
+  <link 
+    rel="alternate" 
+    type="text/html"
+    href="{{ site.public_url }}{{ post.url }}"
+  />
+  <id>{{ site.public_url }}{{ post.url }}</id>
+  <summary type="xhtml">
+    <div>
+      {{ post.content }}
+    </div>
+  </summary>
+  <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
+</entry>

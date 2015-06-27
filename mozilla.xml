@@ -2,19 +2,5 @@
 layout: feed
 ---
 {% for post in site.categories.mozilla %}
-<entry>
-    <title>{{ post.title }}</title>
-    <link rel="alternate" type="text/html"
-          href="http://jwilde.me{{ post.url }}" />
-    <id>http://jwilde.me{{ post.url }}</id>
-    <summary>
-        {{ post.summary }}
-    </summary>
-    <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-        {{ post.content }}
-        </div>
-    </content>
-    <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
-</entry>
+{% include feed_entry.xml %}
 {% endfor %}
