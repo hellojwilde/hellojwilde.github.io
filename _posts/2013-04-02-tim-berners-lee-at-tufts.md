@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Tim Berners-Lee at Tufts
 summary:
     Sir Tim Berners-Lee, the inventor of the World Wide Web, 

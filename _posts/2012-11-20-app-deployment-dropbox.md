@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Real-Time App Deployment with Dropbox
 category: mozilla
 summary:

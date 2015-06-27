@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Solving Ubuntu 9.04's PIL Problems
 summary:
     I was having issues with PIL not being recognized on my Ubuntu machine.

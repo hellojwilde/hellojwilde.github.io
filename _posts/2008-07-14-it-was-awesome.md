@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: It Was Awesome.
 summary:
     After the 2007 Google Highly Open Participation Contest, I had the

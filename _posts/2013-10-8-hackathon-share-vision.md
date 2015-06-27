@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Shipping Prototypes at Hackathons
 summary:
   Learning how to share a vision with that inevitably awful first draft.
@@ -60,13 +60,17 @@ In a typical project for a university computer science course, you're given a pr
 
 But more importantly, a project is graded on how "good" your implementation is according to various metrics about code quality, accuracy of transforming inputs to outputs, etc.
 
+<figure>
 <img class="alignnone size-full wp-image-57" src="http://hellojwilde.files.wordpress.com/2013/10/school.png" alt="school" width="628" height="336" />
+</figure>
 
 It's a really fantastic system for teaching you the craft of computer science, which is foundational to building a software product. However, there's skills beyond these--namely understanding how to pivot and how to understand what problem to solve in the first place--that are key to understanding how to launch a product that this model is not spectacular at conveying.
 
 Hackathons are essentially the inverse of this model. The underlying goal of a hackathon is seeing how competitors figure out what vision is important to solve and what inputs and outputs to support that still demonstrate this vision.
 
+<figure>
 <img class="alignnone size-full wp-image-58" src="http://hellojwilde.files.wordpress.com/2013/10/hackathons.png" alt="hackathons" width="628" height="381" />
+</figure>
 
 Time is incredibly short in a hackathon. If a team tries to build an app that covered all of the real-world inputs and outputs for a vision, they won't be able to be very ambitious with their vision. Or just fall flat and miss implementing the vision entirely.
 

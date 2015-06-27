@@ -1,133 +1,23 @@
 ---
 layout: default
 title: Jonathan Wilde
-classes: home hresume
 ---
-<div class="section">
-    <div class="annotation">
-        <h2>Articles</h2>
-    </div>
+<div class="hfeed">
+  {% for post in site.posts %}
+  <div class="hentry">
+    <h3 class="entry-title">
+      <a href="{{ post.url }}" rel="bookmark">
+        {{ post.title }}
+      </a>
+    </h3>
 
-    <div class="content hfeed">
-        {% for post in site.posts %}
-        <div class="hentry">
-            <h3 class="entry-title"><a href="{{ post.url }}" rel="bookmark">
-                {{ post.title }}
-            </a></h3>
+    <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+      {{ post.date | date: '%d %B %Y' }}
+    </abbr>
 
-            <abbr class="updated" name="{{ post.date | date: '%Y-%m-%d' }}">
-                {{ post.date | date: '%d %B %Y' }}</abbr>
-        </div>
-        {% endfor %}
-    </div>
-</div>
-
-<div class="section">
-    <div class="subsection">
-        <div style="overflow:hidden">
-            <div class="annotation">
-                <h2>Projects &amp; Contributions</h2>
-            </div>
-            
-            <div class="project">
-                <h3 class="project-title"><a href="http://challengepost.com/software/jarvis--2">
-                    Jarvis
-                </a></h3>
-                
-                <p class="project-summary">
-                    Program verbally in simple, natural Eng&shy;lish. Custom client-side natural lang&shy;uage parser.
-                </p>
-                
-                <abbr class="date" name="2013">
-                    Built in a night at HackMIT 2013.
-                </abbr>
-            </div>
-            
-            <div class="project alt">
-                <h3 class="project-title"><a href="https://www.hackerleague.org/hackathons/fall-2013-hackny-student-hackathon/hacks/newsflow">
-                    Newsflow
-                </a></h3>
-                
-                <p class="project-summary">
-                    Visualize how online New York Times ar&shy;ticles about a giv&shy;en topic geo&shy;graphically prop&shy;agate.
-                </p>
-                
-                <abbr class="date" name="2013">
-                    Built in a night at the HackNY 2013 Fall Hackathon.
-                </abbr>
-            </div>
-        </div>
-
-        <div style="overflow:hidden">
-            <div class="project">
-                <h3 class="project-title"><a href="/feed-stats" rel="bookmark">
-                    Feed Stats
-                </a></h3>
-    
-                <p class="project-summary">
-                    FeedBurner, beau&shy;tifully in&shy;tegrated into Word&shy;Press.
-                    Su&shy;pports <abbr title="internationalization">i18n</abbr>.
-                    Trans&shy;lated by a vol&shy;unteer into German.
-                </p>
-    
-                <abbr class="date" name="2008">2008 - 2010.</abbr>
-            </div>
-            
-            <div class="project alt">
-                <h3 class="project-title"><a href="https://github.com/hellojwilde/quizzical" rel="bookmark">
-                    Quizzical
-                </a></h3>
-    
-                <p class="project-summary">
-                    Online quizzes, made simple.  For Google App Engine.  Origin&shy;ally
-                    for <a href="http://www.spartanrobotics.org">Spartan Ro&shy;botics</a>.
-                </p>
-    
-                <abbr class="date" name="2007">Since 2007. Open-source since July 2010.</abbr>
-            </div>
-        </div>
-    </div>
-    
-    <div class="subsection">
-        <div class="content">
-            <div class="button-bar">
-                <a href="http://www.github.com/hellojwilde"
-                   rel="archives" class="button go">All Projects</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section">
-    <div class="annotation">
-        <h2>About</h2>
-    </div>
-
-    <div class="content summary">
-        <p>
-            Hello there!
-        </p>
-        <p>
-            <a href="http://whois.domaintools.com/speedbreeze.com">Over a decade ago</a>,
-            I bought <a href="http://speedbreeze.com">my first domain name</a> 
-            and started tinkering with the web.
-            Since then, I've designed for <a href="http://www.nomic.com/">Nomic</a> and
-            coded for <a href="https://twitter.com/asadotzler/status/254061464795619330">Mozilla</a>
-            and <a href="http://instagram.com">Instagram</a>,
-            won international contests run by 
-            <a href="https://developers.google.com/open-source/ghop/grandprize">Google</a> and 
-            <a href="http://bugzillaupdate.wordpress.com/2011/03/31/winner-of-the-make-bugzilla-pretty-contest/">the Bugzilla project</a>,
-            and shared a bit of the web craft 
-            <a href="https://twitter.com/Codecademy/status/172126622672109568">with 40,000+ students at Codecademy</a>.
-        </p>
-        <p>
-            This spring, I graduated from the <a href="http://tufts.edu">Tufts</a> 
-            <a href="http://engineering.tufts.edu/default.aspx">School of Engineering</a>
-            with a degree in Computer Science. I'm slated to return to Facebook at the end of the summer.
-        </p>
-        <p>
-            To get in touch, <a href="http://twitter.com/home?status=%40hellojwilde%20">@mention me</a> on Twitter. 
-            To provide feedback about a project of mine, please file an issue on <a href="http://www.github.com/hellojwilde">Github</a>.
-        </p>
-    </div>
+    <p class="entry-summary">
+      {{post.summary}}
+    </p>
+  </div>
+  {% endfor %}
 </div>

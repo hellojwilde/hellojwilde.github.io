@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Solving the "No traversable adapter found." Error
 summary:
     Ever seen that error in Zope or Plone?  Here's a general heuristic for

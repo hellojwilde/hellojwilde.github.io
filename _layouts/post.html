@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="hentry">
+  <div class="entry-heading">
+    <h2 class="entry-title">
+      <a href="{{ page.url }}">
+        {{ page.title }}
+      </a>
+    </h2>
+
+    <p>
+      <abbr class="published" name="{{ page.date | date: '%Y-%m-%d' }}">
+        {{ page.date | date: '%d %B %Y' }}
+      </abbr>
+    </p>
+  </div>
+
+
+  <div class="entry-content"> 
+    {{ content }}
+  </div>
+
+  <div class="entry-comments">
+    <p>
+      Have a comment to share?  I’d love to hear it.  Just
+      <a href="http://twitter.com/home?status=%40hellojwilde%20">@mention me</a>
+      on Twitter.
+    </p>
+  </div>
+</div>
