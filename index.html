@@ -9,24 +9,16 @@ classes: home hresume
     </div>
 
     <div class="content hfeed">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts %}
         <div class="hentry">
             <h3 class="entry-title"><a href="{{ post.url }}" rel="bookmark">
                 {{ post.title }}
             </a></h3>
 
-            <p class="entry-summary">
-                {{ post.summary }}
-            </p>
-
             <abbr class="updated" name="{{ post.date | date: '%Y-%m-%d' }}">
                 {{ post.date | date: '%d %B %Y' }}</abbr>
         </div>
         {% endfor %}
-
-        <div class="button-bar">
-            <a href="archives.html" rel="archives" class="button go">All Posts</a>
-        </div>
     </div>
 </div>
 
