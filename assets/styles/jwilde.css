@@ -1,3 +1,5 @@
+@import "normalize.css";
+
 body {
   font-family: "proxima-nova", sans-serif;
   color: #444;
@@ -65,7 +67,7 @@ h1 a {
   width: 100px;
   text-indent: -9999px;
   overflow: hidden;
-  background: url('../images/jwilde.svg') left center no-repeat;
+  background: inline(jwilde.svg) left center no-repeat;
   background-size: fit; 
 }
 
