@@ -14,15 +14,11 @@ There's a couple of things that we can do to expedite success on these sorts of 
 
 As former Mozilla designer Aza Raskin [pointed out years ago](http://www.azarask.in/blog/post/the-wrong-problem/), calling on the old story of the [Gossamer Condor](https://en.wikipedia.org/wiki/Gossamer_Condor)--about how the challenge of building a human powered aircraft to fly for a mile became solvable once it was possible to build and learn from full-scale aircraft rapidly: 
 
-<blockquote>
 When you are solving a difficult problem re-ask the problem so that your solution helps you learn faster. Find a faster way to fail, recover, and try again. If the problem you are trying to solve involves creating a magnum opus, you are solving the wrong problem.
-</blockquote>
 
 You need tools and infrastructure to enable you to rapidly and cheaply build, test, and learn from a fully-built version of a product. As Matt Thompson [noted a couple years back](http://openmatt.org/2013/10/02/open_mozilla/)--a key value in releasing code early and often in this sort of workflow is part of what's helped an organization like Mozilla punch above its weight:
 
-<blockquote>
 Feedback is sometimes useful. Testing always is. Testing a new design, draft or prototype, for example, tells you where it’s working, where it’s surprising, and where it’s broken. And while you may not agree with all the feedback you get, you will always learning something from releasing early and often in public.
-</blockquote>
 
 ## In a Perfect World
 
