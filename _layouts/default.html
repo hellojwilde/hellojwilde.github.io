@@ -7,9 +7,10 @@
   <meta name="author" content="{{ site.author }}" />
   <meta name="description" content="{{ site.subtitle }}" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/bundle.css" />
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ site.author_twitter_username }}" />
@@ -37,26 +38,30 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <h1><a href="/" title="{{ site.author }}">{{ site.author }}</a></h1>
+      <h1 class="header-logo">
+        <a href="/" title="{{ site.author }}" class="header-logo-link">
+          {{ site.author }}
+        </a>
+      </h1>
 
-      <nav>
-        <ul>
-          <li><a href="/">Writing</a></li>
-          <li><a href="/about.html">About</a></li>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item"><a href="/">Writing</a></li>
+          <li class="header-nav-list-item"><a href="/about.html">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <div class="main" role="main">
+  <div role="main">
     <div class="container">
       {{ content }}
     </div>
   </div>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <p>
         Copyright &copy; {{ site.copyright_years }} {{ site.author }}. 

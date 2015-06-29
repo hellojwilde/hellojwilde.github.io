@@ -2,22 +2,22 @@
 layout: default
 title: Jonathan Wilde
 ---
-<div class="hfeed">
-  {% for post in site.posts %}
-  <div class="hentry">
-    <h3 class="entry-title">
-      <a href="{{ post.url }}" rel="bookmark">
-        {{ post.title }}
-      </a>
-    </h3>
+{% for post in site.posts %}
+<div class="mini">
+  <h3 class="mini-title">
+    <a href="{{ post.url }}" rel="bookmark" class="mini-title-link">
+      {{ post.title }}
+    </a>
+  </h3>
 
-    <abbr class="published" name="{{ post.date | date: '%Y-%m-%d' }}">
+  <p class="mini-published">
+    <abbr name="{{ post.date | date: '%Y-%m-%d' }}">
       {{ post.date | date: '%d %B %Y' }}
     </abbr>
+  </p>
 
-    <p class="entry-summary">
-      {{post.summary}}
-    </p>
-  </div>
-  {% endfor %}
+  <p class="mini-summary">
+    {{post.summary}}
+  </p>
 </div>
+{% endfor %}
