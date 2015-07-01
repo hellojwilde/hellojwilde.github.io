@@ -3,7 +3,7 @@ layout: post
 title: Real-Time App Deployment with Dropbox
 category: mozilla
 summary:
-    How I kept early-stage Metro Firefox builds synced between devices last summer at Mozilla.
+    Keeping early-stage Metro Firefox builds synced between devices last summer at my Mozilla internship.
 ---
 
 <div class="warning">
