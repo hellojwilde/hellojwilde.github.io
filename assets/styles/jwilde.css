@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "bootstrap.css";
 
 :root {
   --sm-spacing: 18px;
@@ -11,6 +12,12 @@ body {
   font-family: "proxima-nova", sans-serif;
   color: #444;
   font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 22px;
+  }
 }
 
 a {
@@ -37,13 +44,22 @@ hr {
   margin: 20px;
 }
 
+.twitter-tweet-rendered {
+  margin: 20px auto !important;
+}
+
 @media (min-width: 768px) {
   blockquote,
   figure,
   hr {
     margin: 30px 100px;
   }
+
+  .twitter-tweet-rendered {
+    margin: 30px auto !important;
+  }
 }
+
 
 /**
  * Container
@@ -55,10 +71,17 @@ hr {
 
 @media (min-width: 768px) {
   .container {
-    margin: 0 auto;
-    width: 760px;
+    margin: 0 var(--md-spacing);
   }
 }
+
+@media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    width: 820px;
+  }
+}
+
 
 /**
  * Header
@@ -157,7 +180,6 @@ hr {
   font-weight: 800;
   line-height: 100%;
   font-size: 35px;
-  text-transform: uppercase;
   margin: 0;
 }
 

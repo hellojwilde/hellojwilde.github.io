@@ -439,12 +439,54 @@ th {
   padding: 0;
 }
 
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
 
 
 body {
   font-family: "proxima-nova", sans-serif;
   color: #444;
   font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 22px;
+  }
 }
 
 a {
@@ -471,11 +513,19 @@ hr {
   margin: 20px;
 }
 
+.twitter-tweet-rendered {
+  margin: 20px auto !important;
+}
+
 @media (min-width: 768px) {
   blockquote,
   figure,
   hr {
     margin: 30px 100px;
+  }
+
+  .twitter-tweet-rendered {
+    margin: 30px auto !important;
   }
 }
 
@@ -489,8 +539,14 @@ hr {
 
 @media (min-width: 768px) {
   .container {
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
     margin: 0 auto;
-    width: 760px;
+    width: 820px;
   }
 }
 
@@ -591,7 +647,6 @@ hr {
   font-weight: 800;
   line-height: 100%;
   font-size: 35px;
-  text-transform: uppercase;
   margin: 0;
 }
 
