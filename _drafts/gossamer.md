@@ -45,6 +45,8 @@ To try an experimental build, you log in via GitHub, and pick the build that you
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R2D74jqNEQ8?controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
+<small>Sequence shortened.</small>
+
 About the login step: When you pick an experiment, you're picking it for all of your devices logged in via that account. This makes cross-device testing a bit easier, and enables us to have a remote one-click escape hatch in case something breaks in the experiment you're running. (It happens!)
 
 To ensure that you can trust experiments on Gossamer, we integrated with [Mozillians](https://mozillians.org/en-US/). Only vouched Mozillians can ship experimental builds via Gossamer.
