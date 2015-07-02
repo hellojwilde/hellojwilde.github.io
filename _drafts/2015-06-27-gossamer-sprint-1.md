@@ -12,17 +12,62 @@ I had a [short-term hack](http://jwilde.me/mozilla/2012/11/20/app-deployment-dro
 
 ## An Experiment Called Gossamer
 
-The underlying problem space--how do you build, distribute, and test experimental prototypes rapidly--is one that I've been wanting to revisit for a while, and with a lot of room for innovation.
+The underlying problem space--how you build, distribute, and test experimental prototypes rapidly--is one that I've been wanting to revisit for a while.
 
-For the past couple weeks, [Lyre Calliope](https://twitter.com/captaincalliope) and I have been working on a web browser development workflow project. We're code-naming this project *Gossamer*, in honor of the [Gossamer Albatross](https://en.wikipedia.org/wiki/Gossamer_Albatross), [a success story in applying rapid prototyping methodology](the Gossamer Albatross) to the challenge of building a human-powered airplane.
+This summer, [Lyre Calliope](https://twitter.com/captaincalliope) and I have had some spare time to tinker on this for fun. 
 
-We want to enable the following kind of development cycle:
+We call this project *Gossamer*, in honor of the [Gossamer Albatross](https://en.wikipedia.org/wiki/Gossamer_Albatross), [a success story in applying rapid prototyping methodology](http://www.azarask.in/blog/post/the-wrong-problem/) to building a human-powered airplane.
 
-1. Build prototypes rapidly, and at the maximum fidelity possible.
-2. Instantly share prototypes with testers of all levels of technical ability. 
+We're trying to enable the following development cycle:
+
+1. Build a prototype in a few hours or maybe a couple days, and at the maximum fidelity possible--ideally including user data to the extent possible.
+2. Share prototypes with testers as quickly and easily as sharing a web page. 
 3. Understand how the prototype is performing in user testing relative to the status quo, qualitatively and quantitatively.
-4. Rapidly move ideas that work into the real world.
+4. Move ideas that work into the real world in days, instead of weeks.
 
-For clarity, "rapidly" is defined as a day, maybe two and "instantly" is defined as under a second.
+## A First Proof-of-Concept
 
-## A first sprint
+We started by working to build a simple end-to-end demonstration of a lightweight prototyping workflow:
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Starting a two-week Mozilla heartbeat-style project sprint with <a href="https://twitter.com/hellojwilde">@hellojwilde</a> tomorrow involving Mozilla&#39;s browser.html experiment. Excited!</p>&mdash; Lyre Calliope (@CaptainCalliope) <a href="https://twitter.com/CaptainCalliope/status/602691901255475200">May 25, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+(Yeah, it took longer than two weeks due to personal emergencies on my end.)
+
+We tinkered around with [a few different ways](https://jwilde.hackpad.com/Gossamer-Sprint-Notes-8XCgRZAQ37t) to do this. 
+
+Our proof-of-concept is a simple distribution service that wraps Mozilla's [browser.html](https://github.com/mozilla/browser.html) project. It's a little bit like [TestFlight](https://developer.apple.com/testflight/update/) or [HockeyApp](http://hockeyapp.net/features/), but for web browsers.
+
+To try an experimental build, you log in via GitHub, and pick the build that you want to test...and presto!
+
+<figure>
+<iframe src="https://player.vimeo.com/video/132385668?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</figure>
+
+About the login step: When you pick an experiment, you're picking it for all of your devices logged in via that account. This makes cross-device testing a bit easier, and enables us to have a remote escape hatch in case you pick an experiment that's currently broken. (It happens!)
+
+To ensure that you can trust experiments on Gossamer, we integrated with [Mozillians.org](https://mozillians.org/en-US/). Only vouched Mozillians can ship experimental builds via Gossamer.
+
+To ship an experimental build...you click the ship button. Boom.
+
+<figure>
+<iframe src="https://player.vimeo.com/video/132386905?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</figure>
+
+And the cool thing about browser.html being a web application...is that to apply the update, we just refresh the page:
+
+<figure>
+<iframe src="https://player.vimeo.com/video/132386904?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</figure>
+
+## What's Next
+
+We did some lightweight user testing with Lyre (who hadn't seen any of the implementation yet) stepping through the full install process and me shipping him a new update remotely. 
+
+We learned a [things](https://jwilde.hackpad.com/Gossamer-Sprint-Notes-8XCgRZAQ37t#:h=Tuesday). From this and broader discussion, there's a three big points we'll focus on in the [next milestone](https://waffle.io/hellojwilde/gossamer?milestone=Demo%200):
+
+1. **Streamline every step.** The build service web app should fade away and just be hidden glue around a web browser- and GitHub-centric workflow. 
+2. **Remove the refresh during updates.** Tooling for preserving application state while [making hot code changes](http://gaearon.github.io/react-hot-loader/) to web applications based on [React](http://facebook.github.io/react/) (such as browser.html!) is widely available.
+3. **Make the build pipeline as fast as possible.** Let's see how short we can make the delay from pushing new code to GitHub (or editing through GitHub's web interface) to updates appearing on your machine be.
+
+
