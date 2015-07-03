@@ -21,7 +21,7 @@ We call this project *Gossamer*, in honor of the [Gossamer Albatross](https://en
 
 We're working to enable the following development cycle:
 
-1. Build a prototype in a few hours or maybe a couple days, and at the maximum fidelity possible--featuring user data, instead of mock information.
+1. Build a prototype in a few hours or maybe a couple days, and at the maximum fidelity possible--featuring real user data, instead of placeholders.
 2. Share the prototype with testers as easily as sharing a web page. 
 3. Understand how the prototype is performing in user testing relative to the status quo, qualitatively and quantitatively.
 4. Polish and move ideas that work into the real world in days or possibly weeks, instead of months or years.
@@ -49,7 +49,7 @@ To try an experimental build, you log in via GitHub, and pick the build that you
 
 About the login step: When you pick an experiment, you're picking it for all of your devices logged in via that account. 
 
-This makes cross-device feature testing a bit easier. Suppose you have a feature you want to test on different form factors because the feature is responsive to screen dimensions or input methods. Or suppose you're building a task continuity feature. Having the same experiment running on all the devices of your account makes this testing much easier.
+This makes cross-device feature testing a bit easier. Suppose you have a feature you want to test on different form factors because the feature is responsive to screen dimensions or input methods. Or suppose you're building a task continuity feature that you need to test on multiple devices. Having the same experiment running on all the devices of your account makes this testing much easier.
 
 It also enables us to have a remote one-click escape hatch in case something breaks in the experiment you're running. (It happens to the best developers!)
 
