@@ -47,11 +47,15 @@ To try an experimental build, you log in via GitHub, and pick the build that you
 
 <small>Sequence shortened.</small>
 
-About the login step: When you pick an experiment, you're picking it for all of your devices logged in via that account. This makes cross-device testing a bit easier, and enables us to have a remote one-click escape hatch in case something breaks in the experiment you're running. (It happens!)
+About the login step: When you pick an experiment, you're picking it for all of your devices logged in via that account. 
 
-To ensure that you can trust experiments on Gossamer, we integrated with [Mozillians](https://mozillians.org/en-US/). Only vouched Mozillians can ship experimental builds via Gossamer.
+This makes cross-device feature testing a bit easier. Suppose you have a feature you want to test on different form factors because the feature is responsive to screen dimensions or input methods. Or suppose you're building a task continuity feature. Having the same experiment running on all the devices of your account makes this testing much easier.
 
-To ship an experimental build...you click the "ship" button. Boom. The user gets a message asking them if they want to apply the update.
+It also enables us to have a remote one-click escape hatch in case something breaks in the experiment you're running. (It happens to the best developers!)
+
+To ensure that you can trust experiments on Gossamer, we integrated the login system with [Mozillians](https://mozillians.org/en-US/). Only vouched Mozillians can ship experimental code via Gossamer.
+
+To ship an experimental build...you click the "Ship" button. Boom. The user gets a message asking them if they want to apply the update.
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a4VhIaWnLaw?controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
@@ -91,5 +95,4 @@ Most importantly, we'd love your feedback:
 - Come say hi in `#gossamer` on Mozilla IRC.
 - File issues on GitHub. We're centralizing issues in the [`gossamer`](https://github.com/hellojwilde/gossamer) repo for now.
 
-
-
+There's a lot of awesome in the pipeline. Stay tuned!
