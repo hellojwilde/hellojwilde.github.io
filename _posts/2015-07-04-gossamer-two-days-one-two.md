@@ -16,7 +16,7 @@ In order to tinker with your web browser's source today, you need to download a 
 
 Why can't we just edit and share web browser UI changes from a web application, like we can with documents and other things?
 
-**Well, now we can.** As an example, let's say we want to change the color of the flask icon in the browser.
+**Well, now we can.** As an example, let's say we want to change the color of the flask icon in upper right corner the browser.
 
 We open up the GitHub web interface (even from the browser you're trying to edit), make edit the color, and when the update popup appears in the web browser, click "Apply". Boom, there's the update.
 
