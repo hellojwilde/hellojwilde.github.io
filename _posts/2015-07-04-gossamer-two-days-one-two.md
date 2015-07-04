@@ -3,7 +3,7 @@ layout: post
 title: Gossamer Sprint Two, Days One and Two
 category: mozilla
 summary:
-    You can now tinker with your running web browser from the GitHub web interface, if you want.
+    You can tinker with your web browser from the GitHub web interface, if you want.
 ---
 
 I'm currently working with [Lyre Calliope](https://twitter.com/CaptainCalliope) on [a project to improve tooling](/mozilla/2015/07/02/gossamer.html) for developing and sharing web browser features. 
