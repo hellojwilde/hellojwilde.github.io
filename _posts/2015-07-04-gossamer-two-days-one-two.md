@@ -38,8 +38,7 @@ In case you're curious, here's [the commit](https://github.com/hellojwilde/gossa
 
 ## Next
 
-- Add a way to log in from the browser and select an experimental branch.
-- Build UI for registering webhooks and enqueuing initial builds on a new branch.
+- Focusing on trying to stand up Webpack and react-hot-loader locally with minimal changes to browser.html.
 
 Stay tuned for more!
 
