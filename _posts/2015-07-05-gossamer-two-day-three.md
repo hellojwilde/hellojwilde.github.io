@@ -3,7 +3,7 @@ layout: post
 title: Gossamer Sprint Two, Day Three
 category: mozilla
 summary:
-    You can now push restartless code changes to your browser over WebSockets.
+    Restartless web browser updates over WebSockets.
 ---
 
 Want more context? See [the introduction to Gossamer](/mozilla/2015/07/02/gossamer.html) and [previous update](/mozilla/2015/07/04/gossamer-two-days-one-two.html).
