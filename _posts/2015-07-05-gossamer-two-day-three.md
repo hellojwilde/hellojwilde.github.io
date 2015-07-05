@@ -22,7 +22,9 @@ Let's say we want to change the experiments icon in the upper right of our brows
 
 We're doing this with [Webpack](http://webpack.github.io/) [Hot Module Replacement](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) and [React Hot Loader](https://github.com/gaearon/react-hot-loader).
 
-In the demo, I'm running browser.html from Webpack's development server. It watches and serves the browser.html files from my working copy, performs incremental module builds, and has an open [socket.io[] connection to the browser notifying it of build status. When the working copy changes changes, it performs an incremental build and notifies the browser of new code. The browser can apply the changes without a restart.
+In the demo, I'm running browser.html from Webpack's development server. It watches and serves the browser.html files from my working copy, performs incremental module builds, and has an open [socket.io](http://socket.io/) connection to the browser notifying it of build status. 
+
+When the working copy changes changes, it performs an incremental build and notifies the browser of new code. The browser can apply the changes without a restart.
 
 ## What I Did on Saturday
 
