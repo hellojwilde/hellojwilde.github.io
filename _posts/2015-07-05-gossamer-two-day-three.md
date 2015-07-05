@@ -12,7 +12,7 @@ Want more context? See [the introduction to Gossamer](/mozilla/2015/07/02/gossam
 
 Let's say you make a code change to your browser and you want it today. After making your change, you need to restart the app, or in the case of browser.html clear caches and refresh the page.
 
-You don't need to do that anymore.
+With our experimental fork of browser.html, we can now apply a lot of different types of changes without a refresh.
 
 Let's say we want to change the experiments icon in the upper right of our browser and make it red and larger. You just make the change and hit save. The changes appear in your running browser, without any loss of state.
 
@@ -24,7 +24,7 @@ We're doing this with [Webpack](http://webpack.github.io/) [Hot Module Replaceme
 
 In the demo, I'm running browser.html from Webpack's development server. It watches and serves the browser.html files from my working copy, performs incremental module builds, and has an open [socket.io](http://socket.io/) connection to the browser notifying it of build status. 
 
-When the working copy changes changes, it performs an incremental build and notifies the browser of new code. The browser can apply the changes without a restart.
+When the working copy changes, it performs an incremental build and notifies the browser of new code. The browser can apply the changes without a restart.
 
 ## What I Did on Saturday
 

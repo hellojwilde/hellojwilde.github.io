@@ -16,11 +16,9 @@ In order to tinker with your web browser's source today, you need to download a 
 
 Why can't we just edit and share web browser UI changes from a web application, like we can with documents and other things?
 
-**Well, now we can.** As an example, let's say we want to change the color of the flask icon in upper right corner of the browser.
+In our experimental fork of browser.html, we can up the GitHub web interface (even from the browser you're trying to edit), make edit the color, and when the update popup appears in the web browser, click "Apply".
 
-We open up the GitHub web interface (even from the browser you're trying to edit), make edit the color, and when the update popup appears in the web browser, click "Apply". Boom, there's the update.
-
-And other people testing the same Gossamer branch receive that update, too.
+We don't have to configure Gossamer to continuously build and ship our branches, and other people testing the same Gossamer branch receive that update, too.
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j-jnd1sXsEE?controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
