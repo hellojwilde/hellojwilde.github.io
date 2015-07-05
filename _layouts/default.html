@@ -5,8 +5,7 @@
 
   <title>{{ page.title }}</title>
   <meta name="author" content="{{ site.author }}" />
-  <meta name="description" content="{{ site.subtitle }}" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/assets/bundle.css" />
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
@@ -15,13 +14,19 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ site.author_twitter_username }}" />
   <meta name="twitter:title" content="{{ page.title }}" />
-  {% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary }}" />
-  {% else %}
-  <meta name="twitter:description" content="{{ site.subtitle }}" />
-  {% endif %}
+
   <meta property="og:url" content="{{ site.public_url }}{{ page.url }}" />
   <meta property="article:author" content="{{ site.author_facebook }}" />
+
+  {% if page.summary %}
+  <meta name="description" content="{{ page.summary }}" />
+  <meta name="twitter:description" content="{{ page.summary }}" />
+  <meta property="og:description" content="{{ page.summary }}" />
+  {% else %}
+  <meta name="description" content="{{ site.subtitle }}" />
+  <meta name="twitter:description" content="{{ site.subtitle }}" />
+  <meta property="og:description" content="{{ site.subtitle }}" />
+  {% endif %}
 
   <link
     rel="alternate"
