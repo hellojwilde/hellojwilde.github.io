@@ -6,10 +6,10 @@
     href="{{ site.public_url }}{{ post.url }}"
   />
   <id>{{ site.public_url }}{{ post.url }}</id>
-  <summary type="xhtml">
-    <div>
+  <summary type="html">
+    <![CDATA[<div>
       {{ post.content }}
-    </div>
+    </div>]]>
   </summary>
   <updated>{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}</updated>
 </entry>
