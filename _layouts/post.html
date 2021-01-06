@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 <div class="full-header">
@@ -16,8 +16,10 @@ layout: default
   </p>
 </div>
 
-{{ content }}
-
-<div class="full-author">
-	{% include author.html %}
+<div class="container">
+	{{ content }}
+	
+	<div class="full-author">
+		{% include author.html %}
+	</div>
 </div>
