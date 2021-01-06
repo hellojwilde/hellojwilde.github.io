@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The 2017 Google Highly Open Participation Contest
+title: The 2007 Google Highly Open Participation Contest
 summary:
     After the 2007 Google Highly Open Participation Contest, I had the
     opportunity to go to an awards ceremony at Google's headquarters in
