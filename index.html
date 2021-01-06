@@ -1,23 +1,29 @@
 ---
-layout: default
+layout: base
 title: Jonathan Wilde
 ---
-{% for post in site.posts %}
-<div class="mini">
-  <h3 class="mini-title">
-    <a href="{{ post.url }}" rel="bookmark" class="mini-title-link">
-      {{ post.title }}
-    </a>
-  </h3>
-
-  <p class="mini-published">
-    <abbr name="{{ post.date | date: '%Y-%m-%d' }}">
-      {{ post.date | date: '%d %B %Y' }}
-    </abbr>
-  </p>
-
-  <p class="mini-summary">
-    {{post.summary}}
-  </p>
+<div class="author-large">
+	{% include author.html %}
 </div>
-{% endfor %}
+
+<div class="container">
+	{% for post in site.posts %}
+	<div class="mini">
+	  <h3 class="mini-title">
+	    <a href="{{ post.url }}" rel="bookmark" class="mini-title-link">
+	      {{ post.title }}
+	    </a>
+	  </h3>
+	
+	  <p class="mini-published">
+	    <abbr name="{{ post.date | date: '%Y-%m-%d' }}">
+	      {{ post.date | date: '%d %B %Y' }}
+	    </abbr>
+	  </p>
+	
+	  <p class="mini-summary">
+	    {{post.summary}}
+	  </p>
+	</div>
+	{% endfor %}
+</div>

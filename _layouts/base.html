@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.author }}" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/bundle.css" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.author_twitter_username }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+
+  <meta property="og:url" content="{{ site.public_url }}{{ page.url }}" />
+
+  {% if page.summary %}
+  <meta name="description" content="{{ page.summary }}" />
+  <meta name="twitter:description" content="{{ page.summary }}" />
+  <meta property="og:description" content="{{ page.summary }}" />
+  {% else %}
+  <meta name="description" content="{{ site.subtitle }}" />
+  <meta name="twitter:description" content="{{ site.subtitle }}" />
+  <meta property="og:description" content="{{ site.subtitle }}" />
+  {% endif %}
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="All Posts"
+    href="http://feeds.feedburner.com/Speedbreeze"
+  />
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Plone-Related Posts"
+    href="http://feeds.feedburner.com/SpeedbreezePlone"
+  />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-logo">
+        <a href="/" title="{{ site.author }}" class="header-logo-link">
+          {{ site.author }}
+        </a>
+      </h1>
+
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item"><a href="/">Writing</a></li>
+          <li class="header-nav-list-item"><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div role="main">
+	  {{ content }}
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Copyright &copy; {{ site.copyright_years }} {{ site.author }}. 
+        This work is <a href="{{ site.public_github_url }}" rel="license">open-source</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "{{ site.author }}",
+      "url": "{{ site.public_url }}",
+      "sameAs": [
+        "{{ site.author_twitter }}"
+      ]
+    }
+  </script>
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'xgs1ymb',
+        scriptTimeout: 3000
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
+  <script src="https://getinsights.io/js/insights.js"></script>
+	<script>
+	insights.init('uppGm6YDolq67O5c');
+	insights.trackPages();
+	</script>
+</body>
+</html>

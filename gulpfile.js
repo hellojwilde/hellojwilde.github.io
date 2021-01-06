@@ -10,23 +10,22 @@ const reworkVars = require('rework-vars');
 const sourcemaps = require('gulp-sourcemaps');
 
 const build = gulp.series(() =>
-  gulp.src(['assets/styles/jwilde.css'])    
-    .pipe(rework(
-      reworkInline('assets/images'), 
-      reworkImport(),
-      reworkVars(),
-      {sourcemap: true}
-    ))
-    .pipe(sourcemaps.init({loadMaps: true}))
-      .pipe(autoprefixer())
-      //.pipe(minify())
-      .pipe(rename('bundle.css'))
+  gulp
+    .src(['assets/styles/jwilde.css'])
+    .pipe(
+      rework(reworkInline('assets/images'), reworkImport(), reworkVars(), {
+        sourcemap: true,
+      })
+    )
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(autoprefixer())
+    .pipe(minify())
+    .pipe(rename('bundle.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('assets')),
+    .pipe(gulp.dest('assets'))
 );
 
 const watch = () => gulp.watch(['assets/images/*', 'assets/styles/*'], build);
 
 exports.build = build;
 exports.default = watch;
-
