@@ -180,7 +180,6 @@ input[type="submit"]:active {
  
 .author {
   padding: var(--sm-spacing);
-  display: flex;
   border: 3px solid var(--color-highlight);
   box-shadow: var(--color-highlight) -10px 10px 0px -3px; 
   box-sizing: border-box;
@@ -190,6 +189,7 @@ input[type="submit"]:active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: var(--sm-spacing);
 }
 
 .author-headshot-img {
@@ -234,6 +234,14 @@ input[type="submit"]:active {
 }
 
 @media (min-width: 768px) {
+	.author {
+		display: flex;
+	}
+	
+	.author-headshot {
+		margin-bottom: 0;
+	}
+
   .author-large .author {
     margin: 0 var(--md-spacing) var(--md-spacing);
   }
