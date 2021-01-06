@@ -1,13 +1,13 @@
 ---
 layout: post
-title: It Was Awesome.
+title: The 2017 Google Highly Open Participation Contest
 summary:
     After the 2007 Google Highly Open Participation Contest, I had the
     opportunity to go to an awards ceremony at Google's headquarters in
     Mountain View, CA.  Here's a recap of the awards ceremony weekend.
 ---
 
-The title really says it all.  Seriously.  I recently had the chance to
+I recently had the chance to
 make a very special trip to the Googleplex. It is an event I definitely
 won't forget for a *really* long time.
 
