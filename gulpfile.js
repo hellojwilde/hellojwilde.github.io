@@ -1,16 +1,16 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 
-var autoprefixer = require('gulp-autoprefixer');
-var minify = require('gulp-minify-css');
-var rename = require('gulp-rename');
-var rework = require('gulp-rework');
-var reworkImport = require('rework-import');
-var reworkInline = require('rework-plugin-inline');
-var reworkVars = require('rework-vars');
-var sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const minify = require('gulp-minify-css');
+const rename = require('gulp-rename');
+const rework = require('gulp-rework');
+const reworkImport = require('rework-import');
+const reworkInline = require('rework-plugin-inline');
+const reworkVars = require('rework-vars');
+const sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('build', function() {
-  return gulp.src(['assets/styles/jwilde.css'])    
+const build = gulp.series(() =>
+  gulp.src(['assets/styles/jwilde.css'])    
     .pipe(rework(
       reworkInline('assets/images'), 
       reworkImport(),
@@ -22,9 +22,11 @@ gulp.task('build', function() {
       //.pipe(minify())
       .pipe(rename('bundle.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('assets'));
-});
+    .pipe(gulp.dest('assets')),
+);
 
-gulp.task('default', ['build'], function() {
-  gulp.watch(['assets/images/*', 'assets/styles/*'], ['build']);
-});
+const watch = () => gulp.watch(['assets/images/*', 'assets/styles/*'], build);
+
+exports.build = build;
+exports.default = watch;
+
